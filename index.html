@@ -15,7 +15,7 @@
     <!-- CSS file -->
     <link rel="stylesheet" href="./index.css">
     <!-- Responsive -->
-    <link rel="stylesheet" href="./responsive.css">
+    <!-- <link rel="stylesheet" href="./responsive.css"> -->
     <title>Document</title>
 </head>
 <body>
@@ -24,28 +24,35 @@
          <div class="row text-center">
             <p class="fw-bold teams-title">TEAMS IN HUGO</p>
          </div>
-         <div class="teams d-flex">
-            <div class="wheel-icon">
-               <div class="circle">
-                  <div class="team-icon" style="--index: 1" data-index="1">
-                        <img src="./imgs/Ellipse 5.png" alt="" class="teams-icon-img" style="--index: 1">
-                  </div>
-                  <div class="team-icon" style="--index: 2" data-index="2">
-                        <img src="./imgs/Ellipse 6 (1).png" alt="" class="teams-icon-img" style="--index: 2">
-                  </div>
-                  <div class="team-icon" style="--index: 3" data-index="3">
-                        <img src="./imgs/Ellipse 7 (1).png" alt="" class="teams-icon-img" style="--index: 3">
-                  </div>
-                  <div class="team-icon" style="--index: 4" data-index="4">
-                        <img src="./imgs/Ellipse 8.png" alt="" class="teams-icon-img" style="--index: 4">
+         <div class="teams row justify-content-around">
+            <div class="row col-lg-5">
+               <div class="wheel-icon col d-md-flex justify-content-md-center">
+                  <div class="circle">
+                     <div class="team-icon" style="--index: 1" data-index="1">
+                           <img src="./imgs/Ellipse 5.png" alt="" class="teams-icon-img" style="--index: 1">
+                     </div>
+                     <div class="team-icon" style="--index: 2" data-index="2">
+                           <img src="./imgs/Ellipse 6 (1).png" alt="" class="teams-icon-img" style="--index: 2">
+                     </div>
+                     <div class="team-icon" style="--index: 3" data-index="3">
+                           <img src="./imgs/Ellipse 7 (1).png" alt="" class="teams-icon-img" style="--index: 3">
+                     </div>
+                     <div class="team-icon" style="--index: 4" data-index="4">
+                           <img src="./imgs/Ellipse 8.png" alt="" class="teams-icon-img" style="--index: 4">
+                     </div>
                   </div>
                </div>
-            </div>
-            <div class="row btn-rotate justify-content-center align-content-center">
+               <div class="row flex-row btn-rotate col-lg-auto justify-content-center align-content-center d-lg-none">
+                     <button class="btn-rotate-up col-1"><i class="fa-solid fa-caret-left"></i></button>
+                     <button class="btn-rotate-down col-1"><i class="fa-solid fa-caret-right"></i></button>
+               </div>
+               <div class="row btn-rotate col-lg-auto justify-content-center align-content-center d-none d-lg-flex ms-3 me-2">
                   <button class="btn-rotate-up"><i class="fa-solid fa-caret-up"></i></button>
                   <button class="btn-rotate-down"><i class="fa-solid fa-caret-down"></i></button>
             </div>
-            <div class="row teams-introduce-text">
+            </div>
+            
+            <div class="teams-introduce-text col-lg-7 col-12">
                <div class="p-4 team-all" style="--index: 1" data-index="1">
                   <div class="team-text">
                      <span >POWER RANGERS</span>

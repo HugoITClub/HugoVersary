@@ -37,14 +37,12 @@ html {
 
 
 .teams-introduce .wheel-icon {
-  width: 350px;
   height: 250px;
-  margin: 70px 0;
-  margin-left: 50px;
+  margin: 70px 60px 70px 40px;
   padding: 0;
 }
 .teams-introduce .circle {
-  height: 250px;
+  height: 100%;
   width: 250px;
   position: relative;
   background: url('./imgs/bg.png') center center / cover;
@@ -54,8 +52,8 @@ html {
   position: absolute;
   bottom: 50%;
   right: 50%;
-  width: 50%;
-  height: 50%;
+  width: 132px;
+  height: 132px;
   transform-origin: 100% 100%;
   transform: rotate(calc(45deg + var(--index) * 90deg));
   transition: transform 0.5s;
@@ -76,14 +74,12 @@ html {
 
 /* text-introduce section start */
 .teams-introduce-text {
-  width: 720px;
-  height: 300px;
+  height: auto;
   background: rgba(248, 248, 248, 0.6);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(25px);
   border-radius: 10px;
   margin: 40px 0;
-  margin-left: 15px;
 }
 
 .teams-introduce-text span {
@@ -100,7 +96,6 @@ html {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  border: 1px solid #FFFFFF;
   text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.23);
 }
 
@@ -149,6 +144,7 @@ html {
 .teams-introduce-text a:hover {
   background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
   color: #fff;
+  border: none;
 }
 
 /* text-introduce section end */
@@ -158,7 +154,8 @@ html {
 .btn-rotate {
   display: flex;
   flex-direction: column;
-  margin: 0 5px 0 5px;
+  padding: 0;
+  
 }
 .btn-rotate-up,
 .btn-rotate-down{

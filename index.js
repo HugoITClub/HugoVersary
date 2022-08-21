@@ -34,9 +34,10 @@ const textElement = [...$$('.team-text')]
 textAnimation(texts, textElement);
 
 
-const btnUp = $('.btn-rotate-up');
-const btnDown = $('.btn-rotate-down');
-btnDown.onclick = () => {
+const btnUp = [...$$('.btn-rotate-up')];
+const btnDown = [...$$('.btn-rotate-down')];
+
+const handlePreviousButtonClicked = () => {
    pics.forEach(pic => {
       pic.dataset.index++;
    });
@@ -47,7 +48,7 @@ btnDown.onclick = () => {
    textAnimation(texts, textElement);
    
 };
-btnUp.onclick = () => {
+const handleNextButtonClicked = () => {
    pics.forEach(pic => {
       pic.dataset.index--;
    });
@@ -57,3 +58,6 @@ btnUp.onclick = () => {
    imgAnimation(pics, picImgs);
    textAnimation(texts, textElement);
 };
+
+btnUp.forEach(btn => btn.onclick = handlePreviousButtonClicked)
+btnDown.forEach(btn => btn.onclick = handleNextButtonClicked)

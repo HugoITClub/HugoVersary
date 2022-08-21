@@ -1,4 +1,4 @@
-/* For PC */
+For PC
 
 @media (min-width: 1024px) {
     .teams-introduce .wheel-icon {
@@ -52,9 +52,5 @@
     .teams-introduce-text h1 {
         font-size: 27px;
     }
-    .btn-rotate-up,
-    .btn-rotate-down{
-        
-        
-    }
+    
 }
