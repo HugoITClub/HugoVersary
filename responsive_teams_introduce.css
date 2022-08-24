@@ -1,4 +1,4 @@
-For PC
+/* For PC */
 
 @media (min-width: 1024px) {
     .teams-introduce .wheel-icon {
@@ -19,11 +19,11 @@ For PC
         margin-left: 0;
     }
     .btn-rotate {
-        margin: 0 5px 190px 100px;
+        margin: 0;
     }
 
     .teams-introduce .teams-introduce-text {
-        height: 500px;
+        height: auto;
     }
 }
 
@@ -31,20 +31,15 @@ For PC
 @media (max-width: 768px) {
     .teams-introduce .wheel-icon {
         margin-left: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .teams {
         flex-wrap: wrap;
     }
 
-    .btn-rotate {
-        margin: 0 5px 0 20px !important;
-        flex-direction: row;
-        transform: rotate(90deg) !important;
-    }
     .teams-introduce .teams-introduce-text {
-        height: 350px;
+        height: auto;
     }
     .teams-introduce-text span {
         font-size: 38px;

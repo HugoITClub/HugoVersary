@@ -1,0 +1,89 @@
+.footer {
+    background: linear-gradient(91.62deg, #0A3D6B 3.71%, #3F86AE 101.65%);
+}
+
+.footer .footer-items span {
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0.29em;
+}
+
+.footer .footer-items h5 {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+}
+
+.footer .footer-items {
+    padding-top: 25px;
+}
+
+.footer .footer-item-content p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+}
+
+
+.footer .footer-item h5 {
+    line-height: 40px;
+    font-size: 18px;
+}
+
+.footer .footer-item p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0.13em;
+    margin-bottom: 0;
+}
+
+
+.list-inline .list-inline-item i {
+    font-size: 16px;
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    
+}
+
+.list-inline .list-inline-item {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.list-inline .list-inline-item:hover {
+    opacity: 1;
+}
+
+.list-inline .list-inline-item {
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.footer-language img {
+    width: 35px;
+    height: auto;
+    margin-right: 5px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.language-section img:hover {
+    opacity: 1;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 300;
+    color: #BFBFBF;
+    letter-spacing: 0.05rem;
+}
+
