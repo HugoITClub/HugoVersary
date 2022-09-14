@@ -70,3 +70,5 @@ const handleNextButtonClicked = () => {
 
 btnUp.forEach(btn => btn.onclick = handlePreviousButtonClicked)
 btnDown.forEach(btn => btn.onclick = handleNextButtonClicked)
+
+pics.forEach(btn => btn.onclick = handlePreviousButtonClicked)
