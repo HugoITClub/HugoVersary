@@ -26,12 +26,6 @@ function textAnimation(texts, textElement) {
    });
 }
 
-function iconAnimation(pics, picImgs) {
-   pics.forEach((pic, index) => {
-      dataIndex = pic.dataset.index;
-         pic.dataset.index++;
-   })
-}
 
 const pics = [...$$('.team-icon')];
 const picImgs = [...$$('.teams-icon-img')];
@@ -64,8 +58,7 @@ const handleNextButtonClicked = () => {
    })
    imgAnimation(pics, picImgs);
    textAnimation(texts, textElement);
-};
-
+};   
 
 
 btnUp.forEach(btn => btn.onclick = handlePreviousButtonClicked)

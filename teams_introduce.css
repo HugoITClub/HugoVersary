@@ -32,7 +32,7 @@ html {
   letter-spacing: 1px;
   font-family: 'Montserrat';
   padding: 0;
-  margin: 0;
+  margin: 50px 0 10px 0;
 }
 
 
@@ -82,7 +82,7 @@ html {
   margin: 40px 0;
 }
 
-.teams-introduce-text span {
+.teams-introduce-text .team-name-1 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 800;
@@ -95,8 +95,55 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
-  text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.23);
+  color: transparent;
+}
+
+.teams-introduce-text .team-name-2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 43px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  background: linear-gradient(180deg, #0750DE 0%, #3C96FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.teams-introduce-text .team-name-3 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 43px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  background: linear-gradient(180deg, #FFB800 0%, #FFD600 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.teams-introduce-text .team-name-4 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 43px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  background: linear-gradient(180deg, #7107DB 0%, #DF1BFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .teams-introduce-text h1 {
