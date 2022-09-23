@@ -1,7 +1,5 @@
-
-
 .first-paragraph {
-    /* width: 520px; */
+    width: 520px;
     height: 64px;
     /* font-family: 'Montserrat'; */
     font-style: normal;
@@ -12,8 +10,9 @@
     text-transform: uppercase;
     /* color: #FC6373; */
     color: white;
-    -webkit-text-stroke: 0.5px #FC6373; /* width and color */
- 
+    -webkit-text-stroke: 0.5px #FC6373;
+    /* width and color */
+
 
 }
 
@@ -37,7 +36,6 @@
 
 .description {
     width: 531px;
-    height: 132px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -48,7 +46,7 @@
     color: #071226;
 }
 
-.read-more {
+/* .read-more {
     display: flex;
     font-family: 'Montserrat';
     font-style: normal;
@@ -62,23 +60,37 @@
     -webkit-text-fill-color: transparent;
     color: transparent;
     background-clip: text;
-    /* text-fill-color: transparent; */
-    margin-bottom: 45px;
+margin-bottom: 45px
+} */
 
+.club_read_more {
+    /* background: rgba(248, 248, 248, 0.6); */ 
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */ 
+    /* backdrop-filter: blur(25px); */
+    border-radius: 10px;
+} 
+/* check box-shadow */
+
+.club_read_more a {
+    text-decoration: none;
+    border: 1px solid #FC6373;
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    -webkit-background-clip: text;
+    -webkit-color: transparent;
+    background-clip: text;
+    color: transparent;
+    padding: 10px 30px;
+    border-radius: 35px;
+    letter-spacing: 0.03em;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px; 
 }
 
-.button-link {
-    /* font-weight: 500; */
-    fill: #FFFFFF;
-    color: #FFFFFF;
-    background-color: #FFFFFF00;
-    border-style: solid;
-    border-width: 2px 2px 2px 2px;
-    border-color: #FE9548;
-    border-radius: 40px 40px 40px 40px;
-    padding: 10px 35px 10px 35px;
-}
-
-.content {
-    color: black;
+.club_read_more a:hover {
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    color: #fff;
+    border: none;
 }
