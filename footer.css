@@ -2,6 +2,10 @@
     background: linear-gradient(91.62deg, #0A3D6B 3.71%, #3F86AE 101.65%);
 }
 
+.footer .about-us p {
+    font-size: 12px !important;
+}
+
 .footer .footer-items span {
     font-weight: 300;
     font-size: 12px;

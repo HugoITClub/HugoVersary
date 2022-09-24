@@ -8,7 +8,7 @@
   color: white;
   position: relative;
 } */
-.title {
+.activities-title {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -25,6 +25,7 @@
   background-clip: text;
   /* text-fill-color: transparent; */
   margin-bottom: 45px;
+  margin-top: 70px;
 }
 
 .slides-wrapper {
@@ -37,7 +38,6 @@
   color: white;
   position: relative;
   margin: 0 5px;
-
 }
 
 .activity img {
@@ -51,13 +51,10 @@
   height: 19.68px;
   bottom: 30%;
   left: 10%;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   text-transform: uppercase;
-  
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -66,15 +63,12 @@
   /* identical to box height, or 182% */
   text-align: center;
   letter-spacing: 0.03em;
-
   /* Yellow Gra */
 
   /* background: linear-gradient(180deg, #FFBF1A 0%, #FFDF38 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
   background-color: white;
-
-
   border-radius: 5px;
 }
 
@@ -143,7 +137,7 @@
 }
 
 .activities .see-more {
-  margin: 40px 0 70px 0;
+  margin: 40px 0 30px 0;
 }
 
 .activities .see-more a {
@@ -179,23 +173,11 @@
   border-radius: 40px 40px 40px 40px;
   padding: 10px 35px 10px 35px;
 }
-
-
-.carousel-control-prev {
-  background-color: red;
-  width: 5vh;
-  height: 5vh;
-  border-radius: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.activities_read_more a:hover {
+  background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+  color: #fff;
+  border: none;
 }
 
-.carousel-control-next {
-  background-color: red;
-  width: 5vh;
-  height: 5vh;
-  border-radius: 50%;
-  top: 50%;
-  transform: translate(50%, -50%);
-}
+
 

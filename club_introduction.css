@@ -1,0 +1,113 @@
+.club-introduction {
+    position: relative;
+    padding-top: 95px;
+}
+
+.club-introduction .vector-1 {
+    position: absolute;
+    bottom: -16px;
+    left: 672px;
+}
+
+.club-introduction .vector-2 {
+    position: absolute;
+    right: 102px;
+    top: 80px;
+}
+
+.first-paragraph {
+    width: 520px;
+    height: 64px;
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 56px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    /* color: #FC6373; */
+    color: white;
+    -webkit-text-stroke: 0.5px #FC6373;
+    /* width and color */
+
+
+}
+
+.second-paragraph {
+    width: 563px;
+    height: 52.37px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0.01em;
+    background: linear-gradient(90.35deg, #FF6D1B 0.11%, #FFB54D 89.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* border: 2px solid #FFFFFF; */
+    text-shadow: 0.818314px 1.63663px 4.90988px rgba(0, 0, 0, 0.08);
+    text-transform: uppercase;
+}
+
+.description {
+    width: 531px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    color: rgb(7, 18, 38);
+}
+
+/* .read-more {
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-clip: text;
+margin-bottom: 45px
+} */
+
+.club_read_more {
+    /* background: rgba(248, 248, 248, 0.6); */ 
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */ 
+    /* backdrop-filter: blur(25px); */
+    border-radius: 10px;
+} 
+/* check box-shadow */
+
+.club_read_more a {
+    text-decoration: none;
+    border: 1px solid #FC6373;
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    -webkit-background-clip: text;
+    -webkit-color: transparent;
+    background-clip: text;
+    color: transparent;
+    padding: 10px 30px;
+    border-radius: 35px;
+    letter-spacing: 0.03em;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px; 
+}
+
+.club_read_more a:hover {
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    color: #fff;
+    border: none;
+}
+

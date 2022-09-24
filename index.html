@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=di, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- CSS file -->
-
-    <title>Hugo English Club</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=di, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- CSS file -->
+  <title>Hugo English Club</title>
+</head>
+<body>
     <!-- Header start -->
     <div class="header" id="header">
       <nav class="navbar navbar-expand-lg justify-content-between fixed-top bg-nav">
@@ -32,10 +36,10 @@
           <div class="collapse navbar-collapse nav-elements" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto">
               <li class="nav-item nav-element">
-                <a class="nav-link active text-white" aria-current="page" href="#">HOME</a>
+                <a class="nav-link active text-white nav-home" aria-current="page" href="#">HOME</a>
               </li>
               <li class="nav-item dropdown nav-element nav-teams">
-                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle text-white nav-teams-element" href="#teams-introduce" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   TEAMS
                 </a>
                 <ul class="dropdown-menu teams-elements">
@@ -49,7 +53,7 @@
                 </ul>
               </li>
               <li class="nav-item dropdown nav-element nav-activities p-0">
-                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle text-white" href="activities" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   ACTIVITIES
                 </a>
                 <ul class="dropdown-menu mt-0 activities-elements">
@@ -59,10 +63,10 @@
                 </ul>
               </li>
               <li class="nav-item nav-element">
-                <a class="nav-link text-white" href="#">BLOGS</a>
+                <a class="nav-link text-white nav-blogs" href="#blogs">BLOGS</a>
               </li>
               <li class="nav-item nav-element">
-                <a class="nav-link text-white" href="#">ABOUT US</a>
+                <a class="nav-link text-white" href="#club-introduction">ABOUT US</a>
               </li>
             </ul>
             <form class="search" role="search">
@@ -84,30 +88,68 @@
             <img src="./imgs/slider_1.png" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <button class="carousel-control-prev header-btn-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <button class="carousel-control-next header-btn-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden">Previous</span>
         </button>
       </div>
     </div>
     <link rel="stylesheet" href="./header.css">
     <!-- Header end -->
 
-
+    <!-- Club-introduction start-->
+    <div class="club-introduction" id="club-introduction">
+      <img src="./imgs/decor-bg/Vector 4.png" alt="" class="vector-1">
+      <img src="./imgs/decor-bg/Vector 5.png" alt="" class="vector-2">
+      <div class="container">
+        <div class="row">
+          <div class="left-content col-lg-6">
+            <div class="first-paragraph">
+              what is
+            </div>
+            <div class="second-paragraph">
+              hugo english club
+            </div>
+            <div class="description mt-3">
+              Hugo English Club is an official club directly under the Student Union of the University of Science and
+              Technology - the University of Danang. It was established on March 15, 2008, by the University of Science and
+              Technology students. Our vision is to build a dynamic environment for all students, school-level students, and
+              working people in Da Nang city who want to practice English, enhance personal skills, and experience new
+              activities.
+            </div>
+            <div class="club_read_more mt-4">
+              <a href="https://www.google.com">READ MORE</a>
+            </div>
+          </div>
+          <div class="right-content col-lg-6">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Y9V3bgXbzi4" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="./club_introduction.css">
+    <!-- Club-introduction end-->
 
     <!-- Teams-introduce start -->
     <div class="teams-introduce" id="teams-introduce">
+      <img src="./imgs/decor-bg/decor-9.png" alt="" class="decor-9">
+      <img src="./imgs/decor-bg/decor-8.png" alt="" class="decor-8">
       <div class="container">
+        <img src="./imgs/decor-bg/decor1.png" alt="" class="decor-1">
+        <img src="./imgs/decor-bg/decor-2.png" alt="" class="decor-2">
         <div class="row text-center">
           <p class="fw-bold teams-title">TEAMS IN HUGO</p>
         </div>
-        <div class="teams row justify-content-around">
-          <div class="row col-lg-5">
-            <div class="wheel-icon col d-md-flex justify-content-md-center">
+        <div class="teams row">
+          <div class="col-lg-5">
+            <div class="wheel-icon col d-md-flex justify-content-around">
               <div class="circle">
                 <div class="team-icon" style="--index: 1" data-index="1">
                   <img src="./imgs/Ellipse 5.png" alt="" class="teams-icon-img" style="--index: 1" />
@@ -122,18 +164,17 @@
                   <img src="./imgs/Ellipse 8 new.png" alt="" class="teams-icon-img" style="--index: 4" />
                 </div>
               </div>
-            </div>
-            <div class="row flex-row btn-rotate col-lg-auto justify-content-center align-content-center d-md-flex d-lg-none">
-              <button class="btn-rotate-up col-1"><i class="fa-solid fa-caret-left"></i></button>
-              <button class="btn-rotate-down col-1"><i class="fa-solid fa-caret-right"></i></button>
-            </div>
-            <div class="row btn-rotate col-lg-auto justify-content-center align-content-center d-none d-md-none d-lg-flex ms-3 me-2">
-              <button class="btn-rotate-up"><i class="fa-solid fa-caret-up"></i></button>
-              <button class="btn-rotate-down"><i class="fa-solid fa-caret-down"></i></button>
+              <div class="row flex-row btn-rotate col-lg-auto justify-content-center align-content-center d-md-flex d-lg-none">
+                <button class="btn-rotate-up col-1"><i class="fa-solid fa-caret-left"></i></button>
+                <button class="btn-rotate-down col-1"><i class="fa-solid fa-caret-right"></i></button>
+              </div>
+              <div class="row btn-rotate col-lg-auto justify-content-center align-content-center d-none d-md-none d-lg-flex">
+                <button class="btn-rotate-up d-flex justify-content-center"><i class="fa-sharp fa-solid fa-caret-up"></i></button>
+                <button class="btn-rotate-down d-flex justify-content-center"><i class="fa-sharp fa-solid fa-caret-down"></i></button>
+              </div>
             </div>
           </div>
-
-          <div class="teams-introduce-text col-lg-7 col-12">
+          <div class="teams-introduce-text d-flex col-lg-7 col-12">
             <div class="p-4 team-all" style="--index: 1" data-index="1">
               <div class="team-text">
                 <span class="team-name-1">POWER RANGERS</span>
@@ -152,7 +193,6 @@
                   "When being a part of HC's family, where the elite, multi-talented, scholarship-hunting “heroes” converge, no one will be left out or lost and feel like home.
                   Everyone always cares about each other, shares their feelings and either sorrows or happiness; strives to become stronger and better together.
                   Given that sharing brings members much closer and cozier , Heroes Company is just what people truly want to fulfill their days."
-
                 </p>
                 <a class="mt-5" href="">READ MORE</a>
               </div>
@@ -187,41 +227,41 @@
     <!-- Teams-introduce end -->
 
     <!-- activities start -->
-    <link rel="stylesheet" href="activities.css" />
-    <div class="activities container">
-      <div class="title">activities</div>
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000000">
-            <div class="slides-wrapper">
-              <div class="activity">
-                <img src="/imgs/pic-1.jpg" alt="picture1" class="image" />
-                <div class="activity-tag activity-tag-event">event</div>
-                <div class="activity-title">hugo farewell</div>
-                <div class="activity-date">sep 14 2002</div>
-              </div>
-              <div class="activity">
-                <img src="/imgs/pic-2.jpg" alt="picture1" class="image" />
-                <div class="activity-tag activity-tag-meeting">meeting</div>
-                <div class="activity-title">hugo farewell</div>
-                <div class="activity-date">sep 14 2002</div>
-              </div>
-              <div class="activity">
-                <img src="/imgs/pic-3.jpg" alt="picture1" class="image" />
-                <div class="activity-tag activity-tag-event">event</div>
-                <div class="activity-title">hugo farewell</div>
-                <div class="activity-date">sep 14 2002</div>
+    <div class="activities" id="activities">
+      <div class="container">
+        <div class="activities-title">activities</div>
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <div class="slides-wrapper">
+                  <div class="activity">
+                    <img src="/imgs/pic-1.jpg" alt="picture1" class="image" />
+                    <div class="activity-tag activity-tag-event">event</div>
+                    <div class="activity-title">hugo farewell</div>
+                    <div class="activity-date">sep 14 2002</div>
+                  </div>
+                  <div class="activity">
+                    <img src="/imgs/pic-2.jpg" alt="picture1" class="image" />
+                    <div class="activity-tag activity-tag-meeting">meeting</div>
+                    <div class="activity-title">hugo farewell</div>
+                    <div class="activity-date">sep 14 2002</div>
+                  </div>
+                  <div class="activity">
+                    <img src="/imgs/pic-3.jpg" alt="picture1" class="image" />
+                    <div class="activity-tag activity-tag-event">event</div>
+                    <div class="activity-title">hugo farewell</div>
+                    <div class="activity-date">sep 14 2002</div>
+                  </div>
               </div>
             </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <div class="slides-wrapper">
-              <div class="activity">
-                <img src="/imgs/pic-4.jpg" alt="picture1" class="image" />
-                <div class="activity-tag activity-tag-event">event</div>
-                <div class="activity-title">hugo farewell</div>
-                <div class="activity-date">sep 14 2002</div>
-              </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <div class="slides-wrapper">
+                <div class="activity">
+                  <img src="/imgs/pic-4.jpg" alt="picture1" class="image" />
+                  <div class="activity-tag activity-tag-event">event</div>
+                  <div class="activity-title">hugo farewell</div>
+                  <div class="activity-date">sep 14 2002</div>
+                </div>
               <div class="activity">
                 <img src="/imgs/pic-5.jpg" alt="picture1" class="image" />
                 <div class="activity-tag activity-tag-event">event</div>
@@ -259,29 +299,34 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      </div>
       <div class="see-more d-flex justify-content-center">
         <a class="" href="">SEE MORE</a>
       </div>
-
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"
-      ></script>
     </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="activities.css" />
     <!-- activities end -->
 
     <!-- Blogs start -->
     <div id="blogs" class="blogs">
+      <img src="./imgs/decor-bg/decor-3.png" alt="" class="decor-3">
+      <img src="./imgs///decor-bg/decor-3-1.png" alt="" class="decor-3-1">
+      <img src="./imgs/decor-bg/decor-4.png" alt="" class="decor-4">
+      <img src="./imgs/decor-bg/decor-4-1.png" alt="" class="decor-4-1">
+      
       <div class="container">
         <div class="row text-center">
           <p class="fw-bold blogs-title">BLOGS</p>
@@ -296,98 +341,240 @@
                     <span class="card-time">MAY 30, 2022</span>
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="read-part d-flex justify-content-between h-auto text-decoration-none">
+                    <a href="#" class="read-part d-flex h-auto text-decoration-none">
                       <p class="read-btn-text">Read more</p>
-                      <p class="read-btn m-0"><i class="fa-solid fa-arrow-right"></i></p>
+                      <p class="read-btn ms-3 m-0"><i class="fa-solid fa-arrow-right"></i></p>
                     </a>
                   </div>
                 </div>
+                <div class="card-blog card">
+                  <img src="./imgs/Blog_2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="card-time">MAY 30, 2022</span>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="read-part d-flex h-auto text-decoration-none">
+                      <p class="read-btn-text">Read more</p>
+                      <p class="read-btn ms-3 m-0"><i class="fa-solid fa-arrow-right"></i></p>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-blog card">
+                  <img src="./imgs/Blog_3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="card-time">MAY 30, 2022</span>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="read-part d-flex h-auto text-decoration-none">
+                      <p class="read-btn-text">Read more</p>
+                      <p class="read-btn ms-3 m-0"><i class="fa-solid fa-arrow-right"></i></p>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-blog card">
+                  <img src="./imgs/Blog_4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="card-time">MAY 30, 2022</span>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="read-part d-flex h-auto text-decoration-none">
+                      <p class="read-btn-text">Read more</p>
+                      <p class="read-btn ms-3 m-0"><i class="fa-solid fa-arrow-right"></i></p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cards-wrapper">
                 <div class="card-blog card">
                   <img src="./imgs/Blog_1.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <span class="card-time">MAY 30, 2022</span>
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="read-part d-flex justify-content-between h-auto text-decoration-none">
+                    <a href="#" class="read-part d-flex h-auto text-decoration-none">
                       <p class="read-btn-text">Read more</p>
-                      <p class="read-btn m-0"><i class="fa-solid fa-arrow-right"></i></p>
+                      <p class="read-btn ms-3 m-0"><i class="fa-solid fa-arrow-right"></i></p>
                     </a>
                   </div>
                 </div>
                 <div class="card-blog card">
-                  <img src="./imgs/Blog_1.png" class="card-img-top" alt="...">
+                  <img src="./imgs/Blog_2.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <span class="card-time">MAY 30, 2022</span>
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="read-part d-flex justify-content-between h-auto text-decoration-none">
+                    <a href="#" class="read-part d-flex h-auto text-decoration-none">
                       <p class="read-btn-text">Read more</p>
-                      <p class="read-btn m-0"><i class="fa-solid fa-arrow-right"></i></p>
+                      <p class="read-btn ms-3 m-0"><i class="fa-solid fa-arrow-right"></i></p>
                     </a>
                   </div>
                 </div>
                 <div class="card-blog card">
-                  <img src="./imgs/Blog_1.png" class="card-img-top" alt="...">
+                  <img src="./imgs/Blog_3.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <span class="card-time">MAY 30, 2022</span>
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="read-part d-flex justify-content-around h-auto text-decoration-none">
+                    <a href="#" class="read-part d-flex h-auto text-decoration-none">
                       <p class="read-btn-text">Read more</p>
-                      <p class="read-btn m-0"><i class="fa-solid fa-arrow-right"></i></p>
+                      <p class="read-btn ms-3 m-0"><i class="fa-solid fa-arrow-right"></i></p>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-blog card">
+                  <img src="./imgs/Blog_4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="card-time">MAY 30, 2022</span>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="read-part d-flex h-auto text-decoration-none">
+                      <p class="read-btn-text">Read more</p>
+                      <p class="read-btn ms-3 m-0"><i class="fa-solid fa-arrow-right"></i></p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cards-wrapper">
+                <div class="card-blog card">
+                  <img src="./imgs/Blog_4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="card-time">MAY 30, 2022</span>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="read-part d-flex h-auto text-decoration-none">
+                      <p class="read-btn-text">Read more</p>
+                      <p class="read-btn ms-3 m-0"><i class="fa-solid fa-arrow-right"></i></p>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-blog card">
+                  <img src="./imgs/Blog_4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="card-time">MAY 30, 2022</span>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="read-part d-flex h-auto text-decoration-none">
+                      <p class="read-btn-text">Read more</p>
+                      <p class="read-btn ms-3 m-0"><i class="fa-solid fa-arrow-right"></i></p>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-blog card">
+                  <img src="./imgs/Blog_4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="card-time">MAY 30, 2022</span>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="read-part d-flex h-auto text-decoration-none">
+                      <p class="read-btn-text">Read more</p>
+                      <p class="read-btn ms-3 m-0"><i class="fa-solid fa-arrow-right"></i></p>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-blog card">
+                  <img src="./imgs/Blog_4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="card-time">MAY 30, 2022</span>
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="read-part d-flex h-auto text-decoration-none">
+                      <p class="read-btn-text">Read more</p>
+                      <p class="read-btn ms-3 m-0"><i class="fa-solid fa-arrow-right"></i></p>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <a class="carousel-control-prev blogs-btn-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <!-- <a class="carousel-control-prev blogs-btn-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
           <a class="carousel-control-next blogs-btn-next" href="#carouselExampleControls" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-          </a>
+          </a> -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
         <div class="see-more d-flex justify-content-center">
           <a class="" href="">SEE MORE</a>
         </div>
       </div>
+    </div>
     <link rel="stylesheet" href="./blogs.css">
     <!-- Blogs end -->
 
+    <!-- Register start -->
+    <div class="register-wrap" id="register">
+      <img src="./imgs/decor-bg/decor-5.png" alt="" class="decor-5">
+      <img src="./imgs/decor-bg/decor-6.png" alt="" class="decor-6">
+      <img src="./imgs/decor-bg/decor-7.png" alt="" class="decor-7">
+      <div class="container">
+        <div class="register mt-5">
+            <div class="register_title">
+              BECOME AN OFFICIAL MEMBER OF
+            </div>
+            <div class="register_title">
+              HUGO ENGLISH CLUB
+            </div>
+  
+            <div class="register_description mt-4">
+              <div class="register_description_importance_text mb-4">
+                Hugo brings English more familiar than ever before, whoever you are!
+              </div>
+              <p class="">Do you want to immerse yourself in an environment where people practice English together?</p>
+              <p>Are you eager to make active and talented friends in Danang?</p>
+              <p>More than an English Club, let’s join us to know what's behind it!</p>
+            </div>
+            <div class="register_join_us">
+              <a href="">JOIN US RIGHT NOW</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="./register.css">
+    <!-- Register end -->
 
-    <!-- Footer start -->
-    <div class="footer text-white" id="footer">
-      <div class="container w-100 h-auto mt-5 p-md-0">
-        <div class="row footer-items justify-content-between">
-          <div class="col-lg-3 col-sm-12 px-3 footer-item-logo-title text-lg-start text-center">
-            <div class="row mb-3">
-              <div class="col-lg-2">
-                <img src="./imgs/hugoIcon.png" alt="" />
-              </div>
-              <div class="col-lg-10 d-lg-flex flex-wrap">
-                <h5 class="text-uppercase fw-bold mt-3 mt-lg-0">hugo english club</h5>
-                <span class="text-uppercase">light up your fire</span>
-              </div>
+  <!-- Footer start -->
+  <div class="footer text-white" id="footer">
+    <div class="container w-100 h-auto mt-5 p-md-0">
+      <div class="row footer-items justify-content-between">
+        <div class="col-lg-3 col-sm-12 px-3 footer-item-logo-title text-lg-start text-center">
+          <div class="row mb-3">
+            <div class="col-lg-2">
+              <img src="./imgs/hugoIcon.png" alt="" />
             </div>
-            <div class="row footer-item-content">
-              <p>
-                This website is made ...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent
-                taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-              </p>
+            <div class="col-lg-10 d-lg-flex flex-wrap">
+              <h5 class="text-uppercase fw-bold mt-3 mt-lg-0">hugo english club <br /></h5>
+              <span class="text-uppercase">light up your fire</span>
             </div>
           </div>
-          <div class="col-lg-2 col-sm-12 col-md-4 mt-3 mt-lg-0 footer-item pe-0 text-lg-start text-center">
-            <h5 class="text-uppercase mb-0 mb-lg-3">About us</h5>
-            <p><a href="" class="text-decoration-none text-white">About Hugo English Club</a></p>
-            <p><a href="" class="text-decoration-none text-white">About Team Project</a></p>
+          <div class="row footer-item-content">
+            <p>
+              This website is a product of Hugo IT club and part of the HUGOVERSARY project to celebrate the 15th birthday of Hugo English Club. This website is to store, update and promote the activities and events of Hugo Club up to the present time.
+            </p>
           </div>
-          <div class="col-lg-3 col-sm-12 col-md-4 mt-3 mt-lg-0 footer-item ps-lg-4 p-md-0 text-lg-start text-center">
+        </div>
+        <div class="col-lg-2 col-sm-12 col-md-4 mt-3 mt-lg-0 footer-item px-0 text-lg-start text-center about-us">
+          <h5 class="text-uppercase mb-0 mb-lg-3">About us</h5>
+          <p><a href="" class="text-decoration-none text-white">About Hugo English Club</a></p>
+          <p><a href="" class="text-decoration-none text-white">About HUGOVERSARY Project</a></p>
+        </div>
+        <div class="col-lg-3 col-sm-12 col-md-4 mt-3 mt-lg-0 footer-item ps-lg-4 p-md-0 text-lg-start text-center">
             <h5 class="text-uppercase mb-0 mb-lg-3 footer-contact">contact</h5>
             <p><a href="mailto:hugoclub.dut@gmail.com" class="text-white text-decoration-none">Email: hugoclub.dut@gmail.com</a></p>
-            <p><a href="tel:+00 151515" class="text-white text-decoration-none">Phone number: 00 151515</a></p>
+            <p><a href="tel:+00 151515" class="text-white text-decoration-none">Phone number: +84 981720874</a></p>
             <div class="row mt-3">
               <ul class="list-inline d-flex text-lg-start justify-content-center justify-content-lg-start">
                 <li>
@@ -431,16 +618,16 @@
                   <p class="mb-0">Vietnamese</p></li>
               </ul>
             </div>
-            
           </div>
           <div class="row text-center footer-copyright my-4">
             <p>Copyright © 2022 HUGOENGLISHCLUB</p>
           </div>
-        </div>
       </div>
     </div>
-    <link rel="stylesheet" href="./footer.css" />
-    <script src="./footer.js"></script>
-    <!-- Footer end -->
-  </body>
+  </div>
+  <link rel="stylesheet" href="./footer.css" />
+  <script src="./footer.js"></script>
+  <!-- Footer end -->
+</body>
+
 </html>

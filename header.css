@@ -55,13 +55,6 @@
     margin-top: 66px;
 }
 
-.carousel-control-prev {
-    left: 35px;
-}
-
-.carousel-control-next {
-    right: 35px;
-}
 
 .header .activities-elements,
 .header .teams-elements {
@@ -78,6 +71,18 @@
 .header .activities-elements .activities-name:hover,
 .header .teams-elements .teams-name:hover {
     color: #000 !important;
+}
+
+.header-btn-prev {
+    margin-left: 50px;
+}
+
+.header-btn-next {
+    margin-right: 50px;
+}
+
+.header .activities-elements {
+    min-width: 8rem !important;
 }
 
 .nav-elements .nav-teams:hover .teams-elements {
@@ -97,10 +102,25 @@
 }
 
 .nav-link {
-    padding: 26px 0;
+    padding: 26px;
     border-bottom: 2px solid #000;
 }
 
-.nav-link:focus {
+.nav-link:hover {
     border-bottom: 2px solid #fff;
+}
+
+.nav-home {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+}
+
+.nav-teams-element {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+}
+
+.nav-blogs {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
 }
