@@ -16,9 +16,4 @@ langMenu.addEventListener('click', () => {
     langSelection.classList.toggle('open-lang-selection')
 })
 
-optionLang.forEach( object => {
-    object.addEventListener('click', () => {
-        selected.outerHTML = object.querySelector('lang-option').outerHTML;
-        langSelection.classList.remove('open-lang-selection');
-    })
-});
+
