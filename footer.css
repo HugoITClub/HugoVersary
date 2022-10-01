@@ -2,6 +2,10 @@
     background: linear-gradient(91.62deg, #0A3D6B 3.71%, #3F86AE 101.65%);
 }
 
+.footer .about-us p {
+    font-size: 12px !important;
+}
+
 .footer .footer-items span {
     font-weight: 300;
     font-size: 12px;
@@ -75,9 +79,6 @@
     cursor: pointer;
 }
 
-.language-section img:hover {
-    opacity: 1;
-}
 
 .footer-copyright {
     font-size: 12px;
@@ -87,3 +88,38 @@
     letter-spacing: 0.05rem;
 }
 
+.selected-lang {
+    cursor: pointer;
+    border: 2px solid #fff;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.selected-lang p {
+    margin-right: 38px;
+    font-size: 14px;
+}
+
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    border: 2px solid #fff;
+    border-top: none;
+    border-radius: 5px;
+    display: none;
+}
+
+.lang-menu ul li {
+    list-style: none;
+    padding: 0 10px;
+    background-color: rgba(171, 171, 171, 0.3);
+    cursor: pointer;
+}
+
+.lang-menu ul li:hover {
+    background-color: rgba(14, 14, 48, 0.1);
+}
+
+.open-lang-selection {
+    display: block !important;
+}

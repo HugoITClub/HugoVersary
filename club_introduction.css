@@ -1,3 +1,20 @@
+.club-introduction {
+    position: relative;
+    padding-top: 95px;
+}
+
+.club-introduction .vector-1 {
+    position: absolute;
+    bottom: -16px;
+    left: 672px;
+}
+
+.club-introduction .vector-2 {
+    position: absolute;
+    right: 102px;
+    top: 80px;
+}
+
 .first-paragraph {
     width: 520px;
     height: 64px;
@@ -41,9 +58,8 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    /* or 138% */
     letter-spacing: 0.03em;
-    color: #071226;
+    color: rgb(7, 18, 38);
 }
 
 /* .read-more {
@@ -94,3 +110,4 @@ margin-bottom: 45px
     color: #fff;
     border: none;
 }
+

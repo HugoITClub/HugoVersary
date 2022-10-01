@@ -1,0 +1,126 @@
+.header .icon-text {
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: "Montserrat";
+}
+.header .bg-nav {
+    background-color: #000;
+    padding: 0;
+}
+
+.header .icon-text span {
+    letter-spacing: 0.1em;
+    font-weight: 300;
+}
+
+.header .nav-elements {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.07em;
+}
+
+.header .nav-elements .nav-element {
+    margin: 0 10px;
+}
+.search {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background: #F1F1F1;
+    border: 1px solid #4E4E4E;
+    border-radius: 20px;
+}
+
+.search input {
+    flex-grow: 2;
+    border: none;
+    background-color: #F1F1F1;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search a i {
+    color: #FF4869;
+}
+
+.main-slider {
+    margin-top: 66px;
+}
+
+
+.header .activities-elements,
+.header .teams-elements {
+    font-size: 14px;
+    padding: 0px !important;
+    border-radius: 0;
+}
+
+.header .activities-elements .activities-name,
+.header .teams-elements .teams-name {
+    padding: 10px;
+}
+
+.header .activities-elements .activities-name:hover,
+.header .teams-elements .teams-name:hover {
+    color: #000 !important;
+}
+
+.header-btn-prev {
+    margin-left: 50px;
+}
+
+.header-btn-next {
+    margin-right: 50px;
+}
+
+.header .activities-elements {
+    min-width: 8rem !important;
+}
+
+.nav-elements .nav-teams:hover .teams-elements {
+    display: block;
+    color: white;
+    background-color: #000;
+    padding: 10px 0;
+    margin-top: 0;
+}
+
+.nav-elements .nav-activities:hover .activities-elements {
+    display: block;
+    color: white;
+    background-color: #000;
+    padding: 10px 0;
+    margin-top: 0;
+}
+
+.nav-link {
+    padding: 26px;
+    border-bottom: 2px solid #000;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.nav-home {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+}
+
+.nav-teams-element {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+}
+
+.nav-blogs {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+}
