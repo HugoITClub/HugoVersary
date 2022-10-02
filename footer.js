@@ -11,9 +11,13 @@ function hideSelections() {
     langSelection.classList.remove('open-lang-selection');
 };
 
+const handleLanguage = (index) => {
+    selected.innerHTML = optionLang[index].innerHTML;
+}
+
 
 langMenu.addEventListener('click', () => {
     langSelection.classList.toggle('open-lang-selection')
 })
 
-
+optionLang.forEach( btn => btn.onclick = handleLanguage);
