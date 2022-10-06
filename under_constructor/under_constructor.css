@@ -1,0 +1,42 @@
+.under_construction {
+    padding-top: 8rem;
+}
+
+.uc_description p{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #414141;
+    margin-bottom: 0;
+}
+
+/* .uc_back_to_home {
+    margin-top: 50px;
+} */
+
+.uc_back_to_home a {
+    text-decoration: none;
+    border: 1px solid #FC6373;
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    -webkit-background-clip: text;
+    -webkit-color: transparent;
+    background-clip: text;
+    color: transparent;
+    padding: 10px 30px;
+    border-radius: 25px;
+    letter-spacing: 0.03em;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px; 
+    padding: 15px 65px;
+  }
+  
+.uc_back_to_home a:hover {
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    color: #fff;
+  }
