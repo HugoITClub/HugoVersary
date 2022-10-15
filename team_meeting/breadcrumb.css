@@ -1,0 +1,27 @@
+.breadcrumb_page {
+    /* padding-top: 8rem; */
+    margin-top: 33px;
+    padding-left: 140px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    /* line-height: 26px; */
+}
+
+.breadcrumb {
+    margin-bottom: 0 !important;
+}
+
+.breadcrumb_page a {
+    text-decoration: none;
+    color: #5E5E5E;
+}
+
+.current_page > span {
+    font-weight: 700;
+    color: #000000;
+}
+
+
+
