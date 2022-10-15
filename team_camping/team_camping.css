@@ -1,4 +1,4 @@
-.team_meeting_img {
+.team_camping_img {
     margin-top:71px;
     width: 1530px;
     height: 700px;
@@ -7,7 +7,7 @@
 
 #header-pic {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48.23%, #121212 99.27%),
-    url(../imgs/team_meeting/poster.jpg);
+    url(../imgs/team_camping/poster.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 100vh;
@@ -46,7 +46,7 @@
     user-select: none;
 }
 
-.team_meeting_title {
+.team_camping_title {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -70,14 +70,14 @@
     margin-right: 4rem;
 }
 
-.team_meeting_post {
+.team_camping_post {
     border: 0.5px solid #E2E2E2;
     border-radius: 10.1256px;
     padding: 11px 11px;
     margin-bottom: 1rem;
 }
 
-.team_meeting_post:hover {
+.team_camping_post:hover {
     border: 0.5px solid #FC6373;
 }
 
@@ -177,13 +177,13 @@
     color: transparent;
 }
 
-.team_meeting_see_more {
+.team_camping_see_more {
     margin-top: 40px;
 }
 
 
 
-.team_meeting_see_more a {
+.team_camping_see_more a {
     text-decoration: none;
     border: 1px solid #FC6373;
     background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
@@ -202,7 +202,7 @@
     padding: 15px 65px;
 }
 
-.team_meeting_see_more a:hover {
+.team_camping_see_more a:hover {
     background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
     color: #fff;
 }
