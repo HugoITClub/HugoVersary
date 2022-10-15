@@ -1,0 +1,208 @@
+.team_camping_img {
+    margin-top:71px;
+    width: 1530px;
+    height: 700px;
+    margin-bottom: 3rem;
+}
+
+#header-pic {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48.23%, #121212 99.27%),
+    url(../imgs/team_camping/poster.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+.team-text-content {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+
+.team-text-content .team-name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    user-select: none;
+    min-width: 800px;
+}
+
+.team-text-content .team-name-slogan {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin-top: 30px;
+    user-select: none;
+}
+
+.team_camping_title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 61px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    /* margin-top: 3rem; */
+    margin-bottom: 45px;
+}
+
+.left-content {
+    margin-right: 4rem;
+}
+
+.team_camping_post {
+    border: 0.5px solid #E2E2E2;
+    border-radius: 10.1256px;
+    padding: 11px 11px;
+    margin-bottom: 1rem;
+}
+
+.team_camping_post:hover {
+    border: 0.5px solid #FC6373;
+}
+
+.post_image_part {
+    padding-left: 0;
+}
+
+.post_content_part {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+.post_image {
+    /* margin: 0; */
+    padding: 0;
+    width: 100%;
+    height: 163px;
+    border-radius: 10px;
+}
+
+.post_title {
+    font-family: 'Crimson Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.post_title:hover {
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* cursor: pointer; */
+} 
+
+.post_description {
+    margin-top: 0.2rem;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* or 151% */
+    letter-spacing: 0.03em;
+    color: #949BA4;
+}
+
+.post_date {
+    margin-top: 1rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    /* identical to box height, or 182% */
+    letter-spacing: 0.03em;
+    color: #949BA4;
+}
+
+.read-btn-text {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+}
+
+.read-btn {
+    background-color: #fadec8;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.read-btn i {
+    font-size: 12px;
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.team_camping_see_more {
+    margin-top: 40px;
+}
+
+
+
+.team_camping_see_more a {
+    text-decoration: none;
+    border: 1px solid #FC6373;
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    -webkit-background-clip: text;
+    -webkit-color: transparent;
+    background-clip: text;
+    color: transparent;
+    padding: 10px 30px;
+    border-radius: 25px;
+    letter-spacing: 0.03em;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 15px 65px;
+}
+
+.team_camping_see_more a:hover {
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    color: #fff;
+}
