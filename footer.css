@@ -24,9 +24,10 @@
 }
 
 .footer .footer-item-content p {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+    text-align: justify;
     letter-spacing: 0.05em;
 }
 
