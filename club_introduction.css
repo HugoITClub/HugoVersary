@@ -62,22 +62,6 @@
     color: rgb(7, 18, 38);
 }
 
-/* .read-more {
-    display: flex;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    background-clip: text;
-margin-bottom: 45px
-} */
 
 .club_read_more {
     /* background: rgba(248, 248, 248, 0.6); */ 
@@ -92,7 +76,7 @@ margin-bottom: 45px
     border: 1px solid #FC6373;
     background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
     -webkit-background-clip: text;
-    -webkit-color: transparent;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
     padding: 10px 30px;
