@@ -60,6 +60,7 @@
     line-height: 22px;
     letter-spacing: 0.03em;
     color: rgb(7, 18, 38);
+    text-align: justify;
 }
 
 
@@ -76,7 +77,7 @@
     border: 1px solid #FC6373;
     background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-color: transparent;
     background-clip: text;
     color: transparent;
     padding: 10px 30px;

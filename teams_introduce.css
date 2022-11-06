@@ -214,10 +214,15 @@ html {
   height: 25px;
 }
 
-.btn-rotate-up i {
-  border-bottom: 1px solid red;
+.btn-rotate-up i,
+.btn-rotate-down i {  
+  opacity: 0.7;
 }
 
+.btn-rotate-up i:hover,
+.btn-rotate-down i:hover { 
+  opacity: 1;
+}
 /* Button section end */
 
 .teams-introduce {
