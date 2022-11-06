@@ -1,5 +1,3 @@
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
 
 function imgAnimation(pics, picImgs) {
    pics.forEach((pic, index) => {
@@ -26,17 +24,15 @@ function textAnimation(texts, textElement) {
    });
 }
 
-
-const pics = [...$$('.team-icon')];
-const picImgs = [...$$('.teams-icon-img')];
+const pics = document.querySelectorAll('.team-icon');
+const picImgs = document.querySelectorAll('.teams-icon-img');
 imgAnimation(pics, picImgs);
-const texts = [...$$('.team-all')];
-const textElement = [...$$('.team-text')]
+const texts = document.querySelectorAll('.team-all');
+const textElement = document.querySelectorAll('.team-text');
 textAnimation(texts, textElement);
 
-
-const btnUp = [...$$('.btn-rotate-up')];
-const btnDown = [...$$('.btn-rotate-down')];
+const btnUp = document.querySelectorAll('.btn-rotate-up');
+const btnDown = document.querySelectorAll('.btn-rotate-down');
 
 const handlePreviousButtonClicked = () => {
    pics.forEach(pic => {

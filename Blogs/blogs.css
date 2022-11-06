@@ -1,0 +1,139 @@
+.blog-main-pic img {
+    margin-top: 71px !important;
+    width: auto;
+}
+
+.view-all  {
+    display: inline-block;
+}
+
+.hugo-blog .container {
+    position: relative;
+    border-bottom: 1px solid #FC6373;
+    padding: 0 !important;
+}
+
+.hugo-blog-title {
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+  -webkit-background-clip: text;
+  -webkit-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 34px;
+  letter-spacing: 0.01em;
+  line-height: 41px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+}
+
+.view-all {
+    border: 1px solid #FC6373;
+    padding: 0 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.9485px;
+    line-height: 10px;
+    letter-spacing: 0.03em;
+    border-radius: 30px;
+    height: 20px;
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    -webkit-background-clip: text;
+    -webkit-color: transparent;
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+.view-all:hover {
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    color: #fff;
+}
+
+/* Hugo academic */
+.hugo-academic-item-pic {
+    user-select: none;
+} 
+
+.hugo-academic-part {
+    margin-top: 150px !important;
+}
+
+.hugo-academic-item {
+    transition: all 0.25s;
+    margin-bottom: 35px;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    cursor: pointer;
+    
+}
+
+.hugo-academic-item > img {
+    user-select: none;
+}
+
+.hugo-academic-item:hover {
+    border: 1px solid #FC6373;
+    border-radius: 12px;
+    box-shadow: 2px 4px 4px 0 rgba(22, 22, 26, 0.18);
+}
+
+.hugo-academic-item-author {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.941px;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+    color: #949BA4;
+}
+
+.hugo-academic-item-title {
+    font-family: 'Crimson Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23.6565px;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.hugo-academic-item-content {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.1662px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+}
+
+.hugo-academic-item-time {
+    margin-top: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.8737px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+    color: #949BA4;
+}
+
+/* Hugo confession */
+.hugo-confession {
+    border-top: 1px solid #FC6373;
+    padding-top: 87px;
+}
+
+.hugo-confession-img {
+    user-select: none;
+}
+
+
+.hugo-confession-content .owl-item.active.center {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
