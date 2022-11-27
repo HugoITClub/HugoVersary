@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=di, initial-scale=1.0" />
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;600&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Hugo English Club</title>
+    <!-- Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./team_meeting_detail.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <div class="header" id="header">
+      <nav
+        class="navbar navbar-expand-lg justify-content-between fixed-top bg-nav"
+      >
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img src="../imgs/hugoIcon.png" alt="" />
+          </a>
+          <p class="text-white text-uppercase mb-0 icon-text">
+            hugo english club <br /><span class="text-white"
+              >light up your fire</span
+            >
+          </p>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse nav-elements"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item nav-element">
+                <a
+                  class="nav-link active text-white nav-home"
+                  aria-current="page"
+                  href="#"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item dropdown nav-element nav-teams">
+                <a
+                  class="nav-link dropdown-toggle text-white nav-teams-element"
+                  href="#teams-introduce"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  TEAMS
+                </a>
+                <ul class="dropdown-menu teams-elements">
+                  <li>
+                    <a class="dropdown-item text-white teams-name" href="#"
+                      >POWER RANGERS</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider bg-white m-0" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white teams-name" href="#"
+                      >HEROES COMPANY</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider bg-white m-0" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white teams-name" href="#"
+                      >BANANA</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider bg-white m-0" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white teams-name" href="#"
+                      >NIFFLER</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown nav-element nav-activities p-0">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="activities"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ACTIVITIES
+                </a>
+                <ul class="dropdown-menu mt-0 activities-elements">
+                  <li>
+                    <a class="dropdown-item text-white activities-name" href="#"
+                      >MEETINGS</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider bg-white m-0" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white activities-name" href="#"
+                      >EVENTS</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item nav-element">
+                <a class="nav-link text-white nav-blogs" href="#blogs">BLOGS</a>
+              </li>
+              <li class="nav-item nav-element">
+                <a class="nav-link text-white" href="#club-introduction"
+                  >ABOUT US</a
+                >
+              </li>
+            </ul>
+            <form class="search" role="search">
+              <input
+                class=""
+                type=""
+                placeholder="What do you want to search?"
+                aria-label=""
+              />
+              <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <link rel="stylesheet" href="../header.css" />
+    <!-- Header end -->
+    <div class="team_meeting_detail">
+      <div class="container d-flex justify-content-between">
+        <div class="post-information text-uppercase col-8">
+          <div class="post-time">SEPTEMBER 30TH, 2022</div>
+          <div class="post-title mt-4">
+            HÌNH TRÒN BẮT ĐẦU TỪ Ô VUÔNG - A CIRCLE IS SHAPED BY A SQUARE.
+          </div>
+          <img
+            src="./team_meeting_img/post-pic.png"
+            alt=""
+            class="post-pic img-fluid"
+          />
+          <p class="post-content">
+            Hugo rộng lắm… Có biết bao lớp người, mỗi lớp người ấy là biết bao
+            tâm hồn hoặc thân thuộc đến kì lạ; hoặc mới mẻ, chưa thể chạm tới,
+            chưa thể giãi bày và sẻ chia. Ấy vậy mà ở nơi tưởng chừng như sẽ
+            không bao giờ khai phá được đến cùng này, lại kết tinh một thứ
+            “tình” vừa lạ lẫm vừa sâu sắc, vừa xa xăm lại vừa gần gũi. Xa thật
+            bởi với một con dân Ngoại Ngữ như mình, đường lên Bách Khoa có thể
+            ví như một cuộc “chinh phạt vạn dặm”; những cũng gần thật vì những
+            con người nơi đây đã khiến quãng đường ấy ngắn lại bằng tất cả sự
+            thân thương. Hugo rộng lắm… Vì thế ắt hẳn không nhiều người biết
+            mình là ai đâu. Nếu so với những con người đã gắn bó với Hugo biết
+            bao năm qua, vài tháng ngắn ngủi của mình chỉ là một con số khiêm
+            tốn. Tuy nhiên, mình có thể tự tin mà nói rằng khoảng đời sinh viên
+            của mình được chia thành hai chặng: trước khi tham gia Hugo và sau
+            khi tham gia Hugo. Hành trình ấy có thể được ví von như quá trình
+            hình thành của hình tròn từ một ô vuông.
+          </p>
+        </div>
+        <div class="recent-post col-3">
+          <div class="recent-post-title text">Recent post</div>
+          <div class="recent-post-list">
+            <div class="recent-post-item row d-flex justify-content-between">
+              <div class="col-3 recent-post-item-pic">
+                <img
+                  src="./team_meeting_img/post-pic.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </div>
+              <div class="col-7 recent-post-item-content d-flex">
+                <div class="recent-post-item-content-title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero
+                </div>
+                <div class="recent-post-item-content-main">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero,Nunc vulputate libero
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

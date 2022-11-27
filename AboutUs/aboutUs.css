@@ -1,0 +1,211 @@
+.about-introduction {
+    margin-top: 71px;
+    padding-top: 30px;
+
+}
+
+.about-introduction-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56.8174px;
+    line-height: 80px;
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0;
+}
+
+.about-introduction-content {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    color: #000000;
+    line-height: 140.9%;
+    position: relative;
+    left: 300px;
+    bottom: 60px;
+}   
+
+
+/* About human */
+.about-human .line {
+    border-bottom: 1px solid rgba(252, 99, 115, 1);
+}
+
+
+.about-human .about-human-title-sub,
+.about-human .about-human-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34.4348px;
+    line-height: 140.9%;
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.about-member img {
+    border-radius: 6px;
+}
+
+.about-member .mem-name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140.9%;
+    margin-top: 10px;
+}
+
+.about-member .mem-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140.9%;
+}
+
+/* Hugo in us */
+.hugo-in-us {
+    margin-top: 150px;
+    position: relative;
+}
+
+.hugo-in-us-line {
+    width: 50px;
+    height: 50px;
+    border-top: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -24px;
+}
+
+.hugo-in-us-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    color: #000000;
+}
+
+.hugo-in-us-sub {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #CACACA;
+}
+
+.hugo-in-us-content {
+
+
+}
+
+.hugo-in-us-content .owl-item{
+    border: 8px solid #FE9548;
+    transform: scale(0.8);
+    transition: all 0.5s;
+    border-radius: 31px;
+}
+
+
+.hugo-in-us-content .item img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #FC6373;
+}
+
+
+.hugo-in-us-content .owl-item.active.center{
+    border: 6px solid #FE9548;
+    transform: scale(1) !important;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: -80px;
+    z-index: 1;
+}
+
+.hugo-in-us-content .owl-stage-outer {
+    padding: 140px 0 30px;
+}
+
+.hugo-in-us-content .mem-name {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.09em;
+}
+
+.hugo-in-us-content .mem-team {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.09em;
+}
+
+
+.hugo-in-us-content .mem-description {
+    height: 100px;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.read_more {
+    text-decoration: none;
+    border: 1px solid #FC6373;
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    -webkit-background-clip: text;
+    -webkit-color: transparent;
+    background-clip: text;
+    color: transparent;
+    padding: 2px 20px;
+    border-radius: 35px;
+    letter-spacing: 0.03em;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 18px; 
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.read_more:hover {
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    color: #fff;
+}
+

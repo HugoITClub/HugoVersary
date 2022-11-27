@@ -3,6 +3,10 @@
     width: auto;
 }
 
+.blogs-page {
+    padding-top: 40px !important;
+}
+
 .view-all  {
     display: inline-block;
 }
@@ -57,7 +61,7 @@
 } 
 
 .hugo-academic-part {
-    margin-top: 150px !important;
+    margin-top: 120px !important;
 }
 
 .hugo-academic-item {
@@ -127,13 +131,113 @@
     padding-top: 87px;
 }
 
+.hugo-confession-content {
+    position: relative;
+}
+ 
+.hugo-confession-content .item {
+    
+}
+
+.hugo-confession-content .item img {
+    width: 25px;
+}
+
 .hugo-confession-img {
     user-select: none;
 }
 
-
-.hugo-confession-content .owl-item.active.center {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+.hugo-confession-content .owl-item {
+    transform: scale(0.8);
+    transition: all 0.5s;
+    /* width: 700px !important; */
+    filter: blur(4px);
 }
 
+
+.hugo-confession-content .owl-item.active.center {
+    transform: scale(1);
+    transition: all 0.25s;
+    filter: blur(0px);
+    position: relative;
+    z-index: 1;
+}
+.hugo-confession-content .owl-stage-outer {
+    padding-bottom: 20px;
+}
+
+.hugo-confession-content .item {
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 10px 40px;
+    background-color: #fff !important;
+    margin: 0 -40px;
+    height: auto;
+    width: auto;
+}
+
+.hugo-confession-content .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hugo-confession-content .owl-nav .owl-prev, 
+.hugo-confession-content .owl-nav .owl-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-color: transparent !important;
+    background-clip: text !important;
+    color: transparent !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hugo-confession-content .owl-nav .owl-prev:hover,
+.hugo-confession-content .owl-nav .owl-next:hover {
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%) !important; 
+    color: #fff !important;
+}
+
+.hugo-confession-content .owl-nav .owl-prev span, 
+.hugo-confession-content .owl-nav .owl-next span {
+    font-size: 22px;
+}
+
+
+
+.hugo-confession-content .item .item-sub {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.hugo-confession-content .cfs {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+    -webkit-background-clip: text;
+    -webkit-color: transparent;
+    background-clip: text;
+    color: transparent;
+}

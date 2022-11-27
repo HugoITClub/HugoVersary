@@ -3,6 +3,7 @@ $('.owl-carousel').owlCarousel({
     loop:true,
     nav: true,
     dots: false,
+    margin: -48,
     responsiveClass: true,
     item: 3,
     navText: ["<span class='fa-solid fa-angle-left'></span>","<span class='fa-solid fa-angle-right'></span>"],
@@ -24,3 +25,4 @@ $('.owl-carousel').find('.owl-nav').removeClass('disabled');
 $('.owl-carousel').on('changed.owl.carousel', function(event) {
 	$(this).find('.owl-nav').removeClass('disabled');
 });
+
