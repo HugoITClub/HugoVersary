@@ -1,38 +1,52 @@
 :root {
-  --main-color: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+  --main-color: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
 }
 
 .cards-wrapper {
   display: flex;
   justify-content: center;
-  }
+}
 
-.carousel-control-prev {
-  background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
-  width: 5vh;
-  height: 5vh;
-  border-radius: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 0 !important;
-  }
+.owl-next,
+.owl-prev {
+  font-size: 24px !important;
+  padding: 30px !important;
+  margin: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50% !important;
+  color: #fe9548 !important;
+  background: rgba(255, 255, 255, 0.4) !important;
+}
 
-.carousel-control-next {
-  background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
-  width: 5vh;
-  height: 5vh;
-  border-radius: 50%;
-  top: 50%;
-  transform: translate(50%, -50%);
-  right: 0 !important;
-  }
+.owl-next:hover,
+.owl-prev:hover {
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%) !important;
+  color: #fff !important;
+}
 
+.owl-next {
+  position: absolute;
+  right: -20px;
+  bottom: 50%;
+  transform: translateY(50%);
+}
 
+.owl-prev {
+  position: absolute;
+  left: -20px;
+  bottom: 50%;
+  transform: translateY(50%);
+}
 
 @media (min-width: 768px) {
-    .card img {
-      height: 11em;
-    }
+  .card img {
+    height: 11em;
+  }
+}
+
+.blog-page {
+  padding-top: 40px !important;
 }
 
 .blogs {
@@ -46,13 +60,11 @@
   top: -80px;
 }
 
-
 .decor-3-1 {
   position: absolute;
   right: 8px;
   top: -80px;
 }
-
 
 .decor-4 {
   position: absolute;
@@ -60,42 +72,39 @@
   left: -20px;
 }
 
-
 .decor-4-1 {
   position: absolute;
   bottom: 180px;
 }
 
 .blogs-title {
-  background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
   -webkit-background-clip: text;
   -webkit-color: transparent;
   background-clip: text;
   color: transparent;
   font-size: 50px;
   letter-spacing: 1px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   padding: 0;
 }
 
-.blogs-inner {
-    padding: 1rem 0;
-    transition: all 0.5s;
+.card-blog {
+  transition: all 0.5s;
 }
 
-
-.blogs-inner h5 {
-    font-family: 'Crimson Pro';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 18px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #000000;
+.card-body h5 {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #000000;
 }
 
-.blogs-inner h5:hover {
+.card-body h5:hover {
   background: var(--main-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -103,29 +112,29 @@
   color: transparent;
 }
 
-.blogs-inner p {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: #949BA4;
+.card-body p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #949ba4;
 }
 
-.blogs-inner span {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: #949BA4;
-    margin-bottom: 4px;
+.card-body span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: #949ba4;
+  margin-bottom: 4px;
 }
 
 .blogs-inner .card-blog {
@@ -136,7 +145,7 @@
   border-radius: 10px;
 }
 
-.blogs-inner .card-blog:hover::before {
+.card-blog:hover::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -151,18 +160,18 @@
   border-radius: 18px;
 }
 
-.blogs-inner .card-body {
+.card-blog .card-body {
   padding: 0 12px !important;
 }
 
-.blogs-inner .read-btn-text {
-  font-family: 'Lato';
+.card-blog .read-btn-text {
+  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 19px;
   letter-spacing: 0.03em;
-  background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -170,7 +179,7 @@
   text-decoration: none;
 }
 
-.blogs-inner .read-btn  {
+.card-blog .read-btn {
   background-color: #fadec8;
   width: 18px;
   height: 18px;
@@ -181,10 +190,9 @@
   border-radius: 50%;
 }
 
-
-.blogs-inner .read-btn i {
+.card-blog .read-btn i {
   font-size: 12px;
-  background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -201,8 +209,8 @@
 
 .blogs .see-more a {
   text-decoration: none;
-  border: 1px solid #FC6373;
-  background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+  border: 1px solid #fc6373;
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
   -webkit-background-clip: text;
   -webkit-color: transparent;
   background-clip: text;
@@ -210,15 +218,15 @@
   padding: 10px 30px;
   border-radius: 35px;
   letter-spacing: 0.03em;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  line-height: 18px; 
+  line-height: 18px;
   padding: 15px 65px;
 }
 
 .blogs .see-more a:hover {
-  background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
   color: #fff;
 }

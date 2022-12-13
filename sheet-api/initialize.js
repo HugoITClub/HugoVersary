@@ -4,11 +4,13 @@
 /* exported handleSignoutClick */
 
 // TODO(developer): Set to client ID and API key from the Developer Console
-const CLIENT_ID = "172810885976-hd26i8jfekk71f8d92b7le1qfh4vo9ti.apps.googleusercontent.com";
+const CLIENT_ID =
+  "172810885976-hd26i8jfekk71f8d92b7le1qfh4vo9ti.apps.googleusercontent.com";
 const API_KEY = "AIzaSyBBFsidWL6J88hM0zC9uFA3GnyNmAvXSwU";
 
 // Discovery doc URL for APIs used by the quickstart
-const DISCOVERY_DOC = "https://sheets.googleapis.com/$discovery/rest?version=v4";
+const DISCOVERY_DOC =
+  "https://sheets.googleapis.com/$discovery/rest?version=v4";
 
 // Authorization scopes required by the API; multiple scopes can be
 // included, separated by spaces.
@@ -107,7 +109,52 @@ async function getBlogs(skip = 0, take = 4) {
   // Get data from spreadsheet
   const response = await gapi.client.sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
-    range: `Blogs!A${skip + 2}:D${skip + take + 2 - 1}`,
+    range: `Blogs!A${skip + 2}:E${skip + take + 2 - 1}`,
+  });
+
+  // Process data
+  const { result } = response;
+  if (!result || !result.values || result.values.length == 0) {
+    return [];
+  }
+  return result;
+}
+
+async function getActivities(skip = 0, take = 4) {
+  // Get data from spreadsheet
+  const response = await gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `Activities!A${skip + 2}:F${skip + take + 2 - 1}`,
+  });
+
+  // Process data
+  const { result } = response;
+  if (!result || !result.values || result.values.length == 0) {
+    return [];
+  }
+  return result;
+}
+
+async function getAcademicPost(skip = 0, take = 4) {
+  // Get data from spreadsheet
+  const response = await gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `Academic!A${skip + 2}:F${skip + take + 2 - 1}`,
+  });
+
+  // Process data
+  const { result } = response;
+  if (!result || !result.values || result.values.length == 0) {
+    return [];
+  }
+  return result;
+}
+
+async function getTeamMeetingPost(skip = 0, take = 4) {
+  // Get data from spreadsheet
+  const response = await gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `TeamMeeting!A${skip + 2}:E${skip + take + 2 - 1}`,
   });
 
   // Process data

@@ -1,405 +1,406 @@
-
 /* Header pic start */
 
 #header-pic {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 48.23%, #121212 99.27%),
-    url(../teams-img/HC/HC_pic.png)
-    ;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 100vh;
+  position: relative;
+  padding-top: 50%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, #121212 95%),
+    url(../teams-img/HC/HC_pic.png);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-
 .team-text-content {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
 }
 
 .team-text-content .team-name {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 70px;
-    line-height: 50px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    user-select: none;
-    min-width: 800px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  user-select: none;
+  min-width: 800px;
 }
 
 .team-text-content .team-name-slogan {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    margin-top: 30px;
-    user-select: none;
-    
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-top: 30px;
+  user-select: none;
 }
 
 /* Header pic end */
 
 /* Team information start */
 .header-icon-down {
-    width: 50px;
-    height: 50px;
-    font-size: 22px;
-    border-radius: 50%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -25px;
-    background-image: url(../teams-img/button.png);
-    z-index: 1;
-    cursor: pointer;
-    user-select: none;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25px;
+  background-image: url(../teams-img/button.png);
+  z-index: 1;
+  cursor: pointer;
+  user-select: none;
 }
-
-
 
 .header-icon-down i {
-    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-   -webkit-text-fill-color:transparent;
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .header-icon-down:hover {
-    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
 }
 
 .header-icon-down:hover i {
-    background: white;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-   -webkit-text-fill-color:transparent;
+  background: white;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-
-
 #team-information {
-    background: #121212;
-    min-height: 1000px;
+  background: #121212;
+  min-height: 1000px;
 }
 
 #team-information .team-information-text-title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 37px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
-    text-shadow: 1.78089px 1.78089px 5.34267px rgba(0, 0, 0, 0.31);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-shadow: 1.78089px 1.78089px 5.34267px rgba(0, 0, 0, 0.31);
 }
 
 #team-information .team-information-text p {
-    font-family: 'Lato';
-    font-style: italic;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #CACACA;
-    
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #cacaca;
 }
 
 #team-information .team-information-text span {
-    font-size: 14px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-
+  font-size: 14px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 #team-information .team-information-text span > i {
-    font-size: 20px !important;
-    user-select: none;
-    margin-right: 10px;
+  font-size: 20px !important;
+  user-select: none;
+  margin-right: 10px;
 }
 
 .team-activities {
-    position: relative;
+  position: relative;
 }
 
 .team-activities .team-activities-element {
-    width: 275px;
-    height: 377px;
-    overflow: hidden;
-    padding: 0;
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
-    
+  width: 275px;
+  height: 377px;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
 }
 
 .team-activities-element img {
-    transition: 0.25s linear;
+  transition: 0.25s linear;
 }
 
 .team-activities-element:hover img {
-    transform: scale(1.1);
-    opacity: 0.9;
+  transform: scale(1.1);
+  opacity: 0.9;
 }
 
 .activities-title-sub {
-    opacity: 0;
+  opacity: 0;
 }
 
-
 .team-activities-element .activities-title-main {
-    transform: translateY(30px);
-    transition: all 0.5s;
+  transform: translateY(30px);
+  transition: all 0.5s;
 }
 
 .team-activities-element:hover .activities-title-main {
-    transform: translateY(0px);
+  transform: translateY(0px);
 }
 
-
 .team-activities-element .activities-title-sub {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s linear 0.4s, opacity 0.4s;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.4s, opacity 0.4s;
 }
 
 .team-activities-element:hover .activities-title-sub {
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0s linear 0s, opacity 0.4s;
-
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 0.4s;
 }
 
 .activities-title {
-    position: absolute;
-    color: #FFFFFF;
+  position: absolute;
+  color: #ffffff;
 }
 
 .activities-title h4 {
-    font-family: 'Crimson Pro';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 15px;
-    letter-spacing: 0.03em;
-    margin: 0;
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  margin: 0;
 }
 
 .activities-title p {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    letter-spacing: 0.03em;
-    margin: 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  margin: 0;
 }
-
 
 /* Recent activities */
-.recent-activities {
-    position: relative;
+.activities {
+  position: relative;
 }
-.recent-activities .team-information-text-title {
-    margin-top: 120px;
-}
-
-.recent-activities .item {
-    width: 472px;
-    transition: all 0.5s;
-    overflow: hidden;
-    border-radius: 8px;
-    cursor: pointer;
+.activities .team-information-text-title {
+  margin-top: 120px;
 }
 
-.recent-activities .item img {
-    transition: all 0.5s;
-    overflow: hidden;
+.activities .item {
+  width: auto;
+  transition: all 0.5s;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.recent-activities .item:hover img {
-    transform: scale(1.1);
-    opacity: 0.7;
+.activities .item img {
+  transition: all 0.5s;
+  overflow: hidden;
 }
 
-.recent-activities .item {
-    position: relative;
+.activities .item:hover img {
+  transform: scale(1.1);
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
 }
 
-.recent-activities .item .item-activities-text {
-    position: absolute;
-    bottom: 0;
-
+.activities .item {
+  position: relative;
 }
 
-.recent-activities .item .item-activities-text .item-activities-text-label {
-    position: relative;
-    width: 65px;
-    height: 20px;
-    background-color: #fff;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 15px;
-    letter-spacing: 0.03em;
-    padding: 4px 12px;
-    border-radius: 5px;
-    transform: translateY(50px);    
-    transition: all 0.5s;
-    margin: 0;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+.activities .item .item-activities-text {
+  position: absolute;
+  bottom: 0;
 }
 
-.recent-activities .item .item-activities-text .item-activities-text-label-meeting {
-    color: #FF4869;
+.item-activities-text-title {
+  transition: all 0.5s;
+  bottom: 32px;
 }
 
-.recent-activities .item .item-activities-text .item-activities-text-label-camping {
-    color: #039A36;
+.item:hover .item-activities-text-title {
+  bottom: 100%;
 }
 
-.recent-activities .item .item-activities-text .item-activities-text-label-extra {
-    color: #015AE0;
-    width: 122px !important;
+.activities .item .item-activities-text .item-activities-text-label {
+  position: relative;
+  width: 65px;
+  height: 20px;
+  background-color: #fff;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  padding: 4px 12px;
+  border-radius: 5px;
+  /* transform: translateY(30px); */
+  transition: all 0.5s;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
-
-
-.recent-activities .item .item-activities-text h5 {
-    margin-top: 12px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: 0.03em;
-    transform: translateY(50px);
-    transition: all 0.5s;
+.activities .item .item-activities-text .item-activities-text-label-meeting {
+  color: #ff4869;
 }
 
-.recent-activities .item:hover .item-activities-text h5,
-.recent-activities .item:hover .item-activities-text .item-activities-text-label {
-    transform: translateY(0);
+.activities .item .item-activities-text .item-activities-text-label-camping {
+  color: #039a36;
 }
 
-.recent-activities .item .item-activities-text .item-activities-text-sub {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 12px;
-    letter-spacing: 0.03em;
-    color: #E9E9E9;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s linear 0.4s, opacity 0.4s;
+.activities .item .item-activities-text .item-activities-text-label-extra {
+  color: #015ae0;
+  width: 122px !important;
 }
 
-.recent-activities .item:hover .item-activities-text .item-activities-text-sub {
-    visibility: visible;
-    opacity: 1;
-    transition: visibility 0s linear 0s, opacity 0.4s;
+.activities .item .item-activities-text h5 {
+  margin-top: 12px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  /* transform: translateY(30px); */
+  transition: all 0.5s;
 }
 
-.recent-activities .item .item-activities-text .item-activities-text-time {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 18px;
-    letter-spacing: 0.03em;
-    color: #D7D7D7;
+.activities .item:hover .item-activities-text h5,
+.activities .item:hover .item-activities-text .item-activities-text-label {
+  transform: translateY(0);
+}
+
+.activities .item .item-activities-text .item-activities-text-sub {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  color: #e9e9e9;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.activities .item:hover .item-activities-text .item-activities-text-sub {
+  visibility: visible;
+  opacity: 1;
+}
+
+.activities .item .item-activities-text .item-activities-text-time {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #d7d7d7;
 }
 
 .owl-next,
 .owl-prev {
-    font-size: 24px !important;
-    padding: 30px !important;
-    margin: 0;
-    width: 42px;
-    height: 42px;
-    border-radius: 50% !important;
-    color: #FE9548  !important;
-    background:rgba(255, 255, 255, 0.4) !important;
+  font-size: 24px !important;
+  padding: 30px !important;
+  margin: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50% !important;
+  color: #fe9548 !important;
+  background: rgba(255, 255, 255, 0.4) !important;
 }
 
 .owl-next:hover,
 .owl-prev:hover {
-    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%) !important;
-    color: #fff !important;
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%) !important;
+  color: #fff !important;
 }
 
 .owl-next {
-    position: absolute;
-    right: -12px;
-    bottom: 50%;
-    transform: translateY(50%);
+  position: absolute;
+  right: -24px;
+  bottom: 50%;
+  transform: translateY(50%);
 }
 
 .owl-prev {
-    position: absolute;
-    left: -12px;
-    bottom: 50%;
-    transform: translateY(50%);
+  position: absolute;
+  left: -24px;
+  bottom: 50%;
+  transform: translateY(50%);
 }
 
-.recent-activities .teams-line {
-    user-select: none;
+.activities .teams-line {
+  user-select: none;
 }
 
-.recent-activities .teams-line img {
-    width: 70px;
-    margin: 0 36px;
+.activities .teams-line img {
+  width: 70px;
+  margin: 0 36px;
 }
 
-.recent-activities .teams-line:before{
-    content: "";
-    display: inline-block;
-    width: 80px;
-    height: 40px;
-    background-color: none;
-    border-bottom: 2px solid #fff;
+.activities .teams-line:before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  background-color: none;
+  border-bottom: 2px solid #fff;
 }
 
-.recent-activities .teams-line:after {
-    content: "";
-    display: inline-block;
-    width: 80px;
-    height: 40px;
-    background-color: none;
-    border-bottom: 2px solid #fff;
+.activities .teams-line:after {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  background-color: none;
+  border-bottom: 2px solid #fff;
 }
 
 .team-information-pic {
-    margin-top: 70px;
-    background: linear-gradient(180deg, #121212 0%, rgba(255, 255, 255, 0) 35%,rgba(255, 255, 255, 0) 99.27%),
-                linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 65.23%, #121212 99.27%),
-                url(../teams-img/HC/HC-main-pic.png)
-    ;
-    background-size: auto;
-    background-repeat: no-repeat;
-    height: 900px;
+  margin-top: 70px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #121212 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0) 60%, #121212 100%),
+    url(../teams-img/HC/HC-main-pic.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 900px;
+  margin-bottom: 100px;
 }
 /* Team information end */
 
 .footer-teams {
-    background: linear-gradient(180deg, #121212 0%, rgba(255, 255, 255, 0) 35%,rgba(255, 255, 255, 0) 99.27%),
-                linear-gradient(180deg, rgba(18, 18, 18, 0.55), rgba(18, 18, 18, 0.55)), 
-                linear-gradient(180deg, rgba(10, 61, 107, 0) 20.21%, #3F86AE 85.08%) !important;
+  background: linear-gradient(
+      180deg,
+      #121212 0%,
+      rgba(255, 255, 255, 0) 35%,
+      rgba(255, 255, 255, 0) 99.27%
+    ),
+    linear-gradient(180deg, rgba(18, 18, 18, 0.55), rgba(18, 18, 18, 0.55)),
+    linear-gradient(180deg, rgba(10, 61, 107, 0) 20.21%, #3f86ae 85.08%) !important;
 }
