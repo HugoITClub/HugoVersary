@@ -5,13 +5,13 @@ async function loadBlogs() {
   return new Promise((resolve) => {
     const blogArea = document.querySelector("#blogArea");
     ReactDOM.render(
-      response.values.map(([id, title, content, description]) => (
+      response.values.map(([id, title, content, description, image, time]) => (
         <div key={id} className="card-blog card rounded">
           <div className="img-wrap p-2">
-            <img src="../imgs/Blog_1.png" className="card-img-top rounded" />
+            <img src={image} className="card-img-top rounded" />
           </div>
           <div className="card-body">
-            <span className="card-time">MAY 30, 2022</span>
+            <span className="card-time">{time}</span>
             <h5 className="card-title">{title}</h5>
             <p className="card-text">{description}</p>
             <a
@@ -59,8 +59,28 @@ async function loadAcademicPost() {
   });
 }
 
-const setupOwlCarousel = () => {
-  $(".owl-carousel").owlCarousel({
+async function loadConfession() {
+  // Get blogs from Spreadsheet
+  const response = await getConfession(0, 1000);
+
+  return new Promise((resolve) => {
+    const confessionArea = document.querySelector("#confessionArea");
+    ReactDOM.render(
+      response.values.map(([id, content, number]) => (
+        <div key={id} class="item">
+          <img src="./blog-img/confession-symbol.png" alt="" />
+          <p className="confession-content">{content}</p>
+          <p className="cfs-number">#Cfs {number}</p>
+        </div>
+      )),
+      confessionArea,
+      resolve
+    );
+  });
+}
+
+const setupOwlCarouselBlog = () => {
+  $("#blogArea").owlCarousel({
     center: false,
     loop: true,
     margin: 12,
@@ -85,11 +105,40 @@ const setupOwlCarousel = () => {
   });
 };
 
+const setupOwlCarouselConfession = () => {
+  $("#confessionArea").owlCarousel({
+    center: true,
+    loop: true,
+    margin: -50,
+    nav: true,
+    dots: false,
+    responsiveClass: true,
+    navText: [
+      "<span class='fa-solid fa-angle-left'></span>",
+      "<span class='fa-solid fa-angle-right'></span>",
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 3,
+        nav: true,
+      },
+    },
+  });
+};
+
 async function run() {
   await loadGapi();
   await loadBlogs();
   await loadAcademicPost();
-  setupOwlCarousel();
+  await loadConfession();
+  setupOwlCarouselBlog();
+  setupOwlCarouselConfession();
 }
 
 run();

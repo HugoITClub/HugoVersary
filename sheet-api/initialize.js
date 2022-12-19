@@ -109,7 +109,7 @@ async function getBlogs(skip = 0, take = 4) {
   // Get data from spreadsheet
   const response = await gapi.client.sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
-    range: `Blogs!A${skip + 2}:E${skip + take + 2 - 1}`,
+    range: `Blogs!A${skip + 2}:F${skip + take + 2 - 1}`,
   });
 
   // Process data
@@ -155,6 +155,51 @@ async function getTeamMeetingPost(skip = 0, take = 4) {
   const response = await gapi.client.sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
     range: `TeamMeeting!A${skip + 2}:E${skip + take + 2 - 1}`,
+  });
+
+  // Process data
+  const { result } = response;
+  if (!result || !result.values || result.values.length == 0) {
+    return [];
+  }
+  return result;
+}
+
+async function getStaffMember(skip = 0, take = 4) {
+  // Get data from spreadsheet
+  const response = await gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `StaffMember!A${skip + 2}:D${skip + take + 2 - 1}`,
+  });
+
+  // Process data
+  const { result } = response;
+  if (!result || !result.values || result.values.length == 0) {
+    return [];
+  }
+  return result;
+}
+
+async function getHugoInUs(skip = 0, take = 4) {
+  // Get data from spreadsheet
+  const response = await gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `Hugo-in-us!A${skip + 2}:F${skip + take + 2 - 1}`,
+  });
+
+  // Process data
+  const { result } = response;
+  if (!result || !result.values || result.values.length == 0) {
+    return [];
+  }
+  return result;
+}
+
+async function getConfession(skip = 0, take = 4) {
+  // Get data from spreadsheet
+  const response = await gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `Confession!A${skip + 2}:C${skip + take + 2 - 1}`,
   });
 
   // Process data
