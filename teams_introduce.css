@@ -1,4 +1,3 @@
-
 /* Reset css */
 * {
   margin: 0;
@@ -13,28 +12,27 @@
 }
 
 html {
-  line-height: 1.6rem;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 100%;
   box-sizing: border-box;
 }
-
 
 /* Main code */
 
 /* wheel-icon section start */
 .teams-introduce .container .row .teams-title {
-  background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
   -webkit-background-clip: text;
   -webkit-color: transparent;
   background-clip: text;
   color: transparent;
   font-size: 50px;
   letter-spacing: 1px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   padding: 0;
   margin: 90px 0 10px 0;
 }
-
 
 .teams-introduce .wheel-icon {
   height: 250px;
@@ -45,7 +43,7 @@ html {
   height: 100%;
   width: 250px;
   position: relative;
-  background: url('./imgs/bg.png') center center / cover;
+  background: url("./imgs/bg.png") center center / cover;
   margin-right: 50px;
 }
 .teams-introduce .team-icon {
@@ -84,7 +82,7 @@ html {
 }
 
 .teams-introduce-text .team-name-1 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
   font-size: 43px;
@@ -92,7 +90,7 @@ html {
   display: flex;
   align-items: center;
   letter-spacing: 0.01em;
-  background: linear-gradient(180deg, #DE1D1D 0%, #FF4869 100%);
+  background: linear-gradient(180deg, #de1d1d 0%, #ff4869 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -100,7 +98,7 @@ html {
 }
 
 .teams-introduce-text .team-name-2 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
   font-size: 43px;
@@ -108,7 +106,7 @@ html {
   display: flex;
   align-items: center;
   letter-spacing: 0.01em;
-  background: linear-gradient(180deg, #0750DE 0%, #3C96FF 100%);
+  background: linear-gradient(180deg, #0750de 0%, #3c96ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -116,7 +114,7 @@ html {
 }
 
 .teams-introduce-text .team-name-3 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
   font-size: 43px;
@@ -124,7 +122,7 @@ html {
   display: flex;
   align-items: center;
   letter-spacing: 0.01em;
-  background: linear-gradient(180deg, #FFB800 0%, #FFD600 100%);
+  background: linear-gradient(180deg, #ffb800 0%, #ffd600 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -132,7 +130,7 @@ html {
 }
 
 .teams-introduce-text .team-name-4 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
   font-size: 43px;
@@ -140,7 +138,7 @@ html {
   display: flex;
   align-items: center;
   letter-spacing: 0.01em;
-  background: linear-gradient(180deg, #7107DB 0%, #DF1BFF 100%);
+  background: linear-gradient(180deg, #7107db 0%, #df1bff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -148,7 +146,7 @@ html {
 }
 
 .teams-introduce-text h1 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -156,12 +154,13 @@ html {
   display: flex;
   align-items: center;
   letter-spacing: 0.17em;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
   color: #fff;
 }
 
 .teams-introduce-text p {
-  font-family: 'Crimson Pro';
+  font-family: "Crimson Pro";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -173,8 +172,8 @@ html {
 
 .teams-introduce-text a {
   text-decoration: none;
-  border: 1px solid #FC6373;
-  background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+  border: 1px solid #fc6373;
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
   -webkit-background-clip: text;
   -webkit-color: transparent;
   background-clip: text;
@@ -182,15 +181,15 @@ html {
   padding: 10px 30px;
   border-radius: 35px;
   letter-spacing: 0.03em;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
-  line-height: 18px;   
+  line-height: 18px;
 }
 
 .teams-introduce-text a:hover {
-  background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
   color: #fff;
   border: none;
 }
@@ -203,26 +202,43 @@ html {
   display: flex;
   flex-direction: column;
   padding: 0;
-  
 }
+/* .btn-rotate-up::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: red;
+} */
+.btn-rotate-up {
+}
+
 .btn-rotate-up,
-.btn-rotate-down{
-  background-color: #fff;
-  color: #FC6373;
+.btn-rotate-down {
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 38px;
   height: 25px;
 }
 
+.line {
+  width: 32px;
+  height: 1px;
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
+}
+/* 
 .btn-rotate-up i,
-.btn-rotate-down i {  
-  opacity: 0.7;
+.btn-rotate-down i {
+  opacity: 0.8;
 }
 
 .btn-rotate-up i:hover,
-.btn-rotate-down i:hover { 
+.btn-rotate-down i:hover {
   opacity: 1;
-}
+} */
 /* Button section end */
 
 .teams-introduce {
@@ -250,5 +266,5 @@ html {
 .decor-9 {
   position: absolute;
   top: 30px;
-  left: 50px; 
+  left: 50px;
 }

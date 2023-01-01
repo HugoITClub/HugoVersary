@@ -81,6 +81,10 @@
     <script src="https://accounts.google.com/gsi/client"></script>
     <script src="/sheet-api/initialize.js"></script>
     <!-- Google API end -->
+
+    <!-- JSZip start -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <!-- JSZip end -->
   </head>
 
   <body>
@@ -234,7 +238,7 @@
           data-bs-target="#carouselExampleInterval"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="fa-solid fa-angle-left" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button
@@ -243,8 +247,8 @@
           data-bs-target="#carouselExampleInterval"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="fa-solid fa-angle-right" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
         </button>
       </div>
     </div>
@@ -348,22 +352,32 @@
                 </button>
               </div>
               <div
-                class="row btn-rotate col-lg-auto justify-content-center align-content-center d-none d-md-none d-lg-flex"
+                class="row btn-rotate col-lg-auto justify-content-center align-items-center d-none d-md-none d-lg-flex"
               >
-                <button class="btn-rotate-up d-flex justify-content-center">
+                <button
+                  class="btn-rotate-up d-flex justify-content-center align-items-center"
+                >
                   <i class="fa-solid fa-caret-up"></i>
                 </button>
-                <button class="btn-rotate-down d-flex justify-content-center">
+                <div
+                  class="line d-flex justify-content-center align-items-center"
+                ></div>
+                <button
+                  class="btn-rotate-down d-flex justify-content-center align-items-center"
+                >
                   <i class="fa-solid fa-caret-down"></i>
                 </button>
               </div>
             </div>
           </div>
-          <div class="teams-introduce-text d-flex col-lg-7 col-12">
+          <div
+            id="teamIntroductionArea"
+            class="teams-introduce-text d-flex col-lg-7 col-12"
+          >
             <div class="p-4 team-all" style="--index: 1" data-index="1">
               <div class="team-text">
-                <span class="team-name-1">POWER RANGERS</span>
-                <h1 class="my-3">JUSTICE FOR ALL</h1>
+                <span class="team-name-1 text-uppercase">power rangers</span>
+                <h1 class="my-3 text-uppercase">JUSTICE FOR ALL</h1>
                 <p class="mb-4">
                   “Each Power Rangers's member has an unique color and that
                   creates an unique team. But we are always willing to support
@@ -433,6 +447,7 @@
     <link rel="stylesheet" href="./teams_introduce.css" />
     <link rel="stylesheet" href="./responsive_teams_introduce.css" />
     <script src="./teams_introduce.js"></script>
+    <!-- <script src="./team-introduction.js" type="text/babel"></script> -->
     <!-- Teams-introduce end -->
 
     <!-- activities start -->
@@ -514,7 +529,7 @@
       <img src="./imgs/decor-bg/decor-6.png" alt="" class="decor-6" />
       <img src="./imgs/decor-bg/decor-7.png" alt="" class="decor-7" />
       <div class="container">
-        <div class="register mt-5">
+        <div class="register row mt-5">
           <div class="register_title">BECOME AN OFFICIAL MEMBER OF</div>
           <div class="register_title">HUGO ENGLISH CLUB</div>
 
