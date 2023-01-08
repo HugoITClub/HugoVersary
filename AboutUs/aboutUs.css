@@ -82,6 +82,9 @@
   position: relative;
 }
 
+#hugo-in-us-area {
+}
+
 .hugo-in-us-line {
   width: 50px;
   height: 50px;
@@ -115,27 +118,71 @@
 }
 
 .hugo-in-us-content .owl-item {
-  border: 8px solid #fe9548;
+  /* width: 500px !important; */
+  border: 8px solid rgb(254, 149, 72, 0.8);
   transform: scale(0.8);
-  transition: all 0.5s;
-  border-radius: 31px;
+  transition: all 0.25s;
+  border-radius: 60px;
 }
 
 .hugo-in-us-content .item img {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
-  border: 3px solid #fc6373;
+  border: 3px solid rgb(252, 99, 115, 1);
 }
 
-.hugo-in-us-content .owl-item.active.center {
-  border: 6px solid #fe9548;
-  transform: scale(1) !important;
-  transition: all 0.5s;
+#hugo-in-us-area .owl-item.active.center {
+  border: 8px solid rgb(254, 149, 72, 0.8);
+  transform: scale(1.1);
+  transition: ease-in 0.25s;
   box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.25);
   position: relative;
-  top: -80px;
+  top: -40px;
   z-index: 1;
+  background-color: #fff;
+  border-radius: 31px;
+  max-height: 460px;
+  overflow: hidden;
+}
+
+#hugo-in-us-area .owl-nav {
+  display: flex;
+}
+
+#hugo-in-us-area .owl-next,
+#hugo-in-us-area .owl-prev {
+  font-size: 24px !important;
+  padding: 0px !important;
+  margin: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50% !important;
+  color: #fe9548 !important;
+  background: rgb(236, 231, 231) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hugo-in-us-area .owl-next:hover,
+#hugo-in-us-area .owl-prev:hover {
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%) !important;
+  color: #fff !important;
+}
+
+#hugo-in-us-area .owl-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(50%);
+}
+
+#hugo-in-us-area .owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(50%);
 }
 
 .hugo-in-us-content .owl-stage-outer {
@@ -143,40 +190,46 @@
 }
 
 .hugo-in-us-content .mem-name {
-  font-family: "Lato";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 29px;
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.02em;
 }
 
 .hugo-in-us-content .mem-team {
-  font-family: "Lato";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
   line-height: 18px;
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.01em;
 }
 
 .hugo-in-us-content .mem-description {
+  font-family: "Montserrat";
   height: 100px;
   overflow: hidden;
   text-align: center;
-  font-family: "Lato";
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 14px;
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.02em;
+}
+
+#hugo-in-us-area .owl-item.active.center .mem-description {
+  display: flex;
+}
+
+#hugo-in-us-area .owl-item .mem-description {
+  display: none;
+  height: 80px;
 }
 
 .read_more {

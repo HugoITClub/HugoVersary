@@ -89,12 +89,16 @@
   padding: 0;
 }
 
+#blogArea {
+}
+
 .card-blog {
-  cursor: pointer;
+  border: 2px solid rgba(226, 226, 226, 1);
 }
 
 .card-blog:hover {
-  border: 1px solid #fe9548;
+  border: 2px solid #fe9548;
+  box-shadow: 0 0 51px rgba(33, 33, 33, 0.2);
 }
 
 .card-body h5 {
@@ -116,16 +120,21 @@
   color: transparent;
 }
 
-.card-body p {
+.card-body .card-text {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 18px;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
   color: #949ba4;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 54px;
 }
 
 .card-body span {
@@ -169,18 +178,19 @@
 }
 
 .card-blog .read-btn-text {
-  font-family: "Lato";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
+  line-height: 16px;
+  letter-spacing: 0.01em;
   background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
   text-decoration: none;
+  margin-bottom: 0 !important;
 }
 
 .card-blog .read-btn {
@@ -201,6 +211,15 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+}
+
+.card-blog .read-part {
+  margin-bottom: 16px;
+}
+
+.card-blog .read-btn {
+  margin-bottom: 0 !important;
+  margin-left: 8px;
 }
 
 .blogs-inner .read-part {

@@ -112,7 +112,22 @@ async function getBlogs(skip = 0, take = 4) {
   // Get data from spreadsheet
   const response = await gapi.client.sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
-    range: `Blogs!A${skip + 2}:F${skip + take + 2 - 1}`,
+    range: `Blogs!A${skip + 2}:H${skip + take + 2 - 1}`,
+  });
+
+  // Process data
+  const { result } = response;
+  if (!result || !result.values || result.values.length == 0) {
+    return [];
+  }
+  return result;
+}
+
+async function getSlider(skip = 0, take = 4) {
+  // Get data from spreadsheet
+  const response = await gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `SliderHomePage!A${skip + 2}:D${skip + take + 2 - 1}`,
   });
 
   // Process data
@@ -127,7 +142,7 @@ async function getActivities(skip = 0, take = 4) {
   // Get data from spreadsheet
   const response = await gapi.client.sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
-    range: `Activities!A${skip + 2}:F${skip + take + 2 - 1}`,
+    range: `Activities!A${skip + 2}:I${skip + take + 2 - 1}`,
   });
 
   // Process data
@@ -213,21 +228,6 @@ async function getConfession(skip = 0, take = 4) {
   return result;
 }
 
-// async function getTeamIntroduction(skip = 0, take = 4) {
-//   // Get data from spreadsheet
-//   const response = await gapi.client.sheets.spreadsheets.values.get({
-//     spreadsheetId: SPREADSHEET_ID,
-//     range: `TeamIntroduction!A${skip + 2}:D${skip + take + 2 - 1}`,
-//   });
-
-//   // Process data
-//   const { result } = response;
-//   if (!result || !result.values || result.values.length == 0) {
-//     return [];
-//   }
-//   return result;
-// }
-
 // Get Documents
 async function readDocAndLoadAsHtml(fileId) {
   // Get file from GG Drive as a Zip file
@@ -259,15 +259,4 @@ async function readDocAndLoadAsHtml(fileId) {
   htmlElement.querySelector("body").style = "";
 
   return htmlElement;
-}
-// Get Images
-async function getImageAndLoadAsObjectUrl(fileId) {
-  // Get file from GG Drive as a Zip file
-  const response = await gapi.client.drive.files.get({
-    fileId,
-    alt: "media",
-  });
-
-  const data = response.body;
-  return URL.createObjectURL(data);
 }

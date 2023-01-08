@@ -12,13 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -54,6 +51,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
       integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
@@ -78,28 +76,25 @@
     ></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-    <!-- Google API -->
+    <!-- Google API start -->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://accounts.google.com/gsi/client"></script>
     <script src="/sheet-api/initialize.js"></script>
-    <script
-      src="https://apis.google.com/js/api.js"
-      onload="onGapiLoaded()"
-    ></script>
-    <script
-      src="https://accounts.google.com/gsi/client"
-      onload="onGsiClientLoaded()"
-    ></script>
+    <!-- Google API end -->
 
-    <!-- Carousel -->
+    <!-- JSZip start -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <!-- JSZip end -->
   </head>
 
   <body>
-    <!-- header start -->
+    <!-- Header start -->
     <div class="header" id="header">
       <nav
         class="navbar navbar-expand-lg justify-content-between fixed-top bg-nav"
       >
         <div class="container">
-          <a href="#" class="navbar-brand">
+          <a href="../index.html" class="navbar-brand">
             <img src="../imgs/hugoIcon.png" alt="" />
           </a>
           <p class="text-white text-uppercase mb-0 icon-text">
@@ -133,15 +128,15 @@
                 >
               </li>
               <li class="nav-item dropdown nav-element nav-teams">
-                <a
+                <div
                   class="nav-link dropdown-toggle text-white nav-teams-element"
-                  href="#teams-introduce"
+                  href=""
                   role="button"
-                  data-bs-toggle="dropdown"
+                  data-bs-toggle=""
                   aria-expanded="false"
                 >
                   TEAMS
-                </a>
+                </div>
                 <ul class="dropdown-menu teams-elements">
                   <li>
                     <a class="dropdown-item text-white teams-name" href="#"
@@ -175,15 +170,15 @@
                 </ul>
               </li>
               <li class="nav-item dropdown nav-element nav-activities p-0">
-                <a
-                  class="nav-link dropdown-toggle text-white"
-                  href="activities"
+                <div
+                  class="nav-link dropdown-toggle text-white nav-teams-element"
+                  href=""
                   role="button"
-                  data-bs-toggle="dropdown"
+                  data-bs-toggle=""
                   aria-expanded="false"
                 >
                   ACTIVITIES
-                </a>
+                </div>
                 <ul class="dropdown-menu mt-0 activities-elements">
                   <li>
                     <a class="dropdown-item text-white activities-name" href="#"
@@ -201,10 +196,14 @@
                 </ul>
               </li>
               <li class="nav-item nav-element">
-                <a class="nav-link text-white nav-blogs" href="#blogs">BLOGS</a>
+                <a
+                  class="nav-link text-white nav-blogs"
+                  href="../Blogs/blogs.html"
+                  >BLOGS</a
+                >
               </li>
               <li class="nav-item nav-element">
-                <a class="nav-link text-white" href="#club-introduction"
+                <a class="nav-link text-white" href="../AboutUs/aboutUs.html"
                   >ABOUT US</a
                 >
               </li>
@@ -222,10 +221,10 @@
         </div>
       </nav>
     </div>
-    <div class="row blog-main-pic"></div>
     <link rel="stylesheet" href="../header.css" />
+    <script src="./slider.js" type="text/babel"></script>
+    <!-- Header end -->
     <link rel="stylesheet" href="./blogs.css" />
-    <!-- header end -->
 
     <!-- Hugo blog start -->
     <div class="hugo-blog mt-5 d-flex">
@@ -239,25 +238,7 @@
 
     <div id="blogs" class="blogs blog-page">
       <div class="container">
-        <div id="blogArea" class="owl-carousel owl-theme">
-          <div class="card-blog card">
-            <img src="../imgs/Blog_1.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <span class="card-time">MAY 30, 2022</span>
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="read-part d-flex h-auto text-decoration-none">
-                <p class="read-btn-text">Read more</p>
-                <p class="read-btn ms-3 m-0">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </p>
-              </a>
-            </div>
-          </div>
-        </div>
+        <div id="blogArea" class="owl-carousel owl-theme"></div>
       </div>
     </div>
     <link rel="stylesheet" href="../blogs.css" />
@@ -275,32 +256,7 @@
       </div>
     </div>
     <div class="container mt-5">
-      <div id="hugo-academic" class="hugo-academic px-5 py-3">
-        <div class="hugo-academic-item row justify-content-between">
-          <div class="col-lg-3 hugo-academic-item-pic">
-            <img src="./blog-img/hugo-academic-1.png" alt="" />
-          </div>
-          <div class="col-lg-7 ms-5">
-            <p class="hugo-academic-item-author text-uppercase mb-0">
-              by the tran
-            </p>
-            <h4 class="hugo-academic-item-title">
-              6 websites to increase productivity when working with English.
-            </h4>
-            <p class="hugo-academic-item-content mb-0">
-              🤔You are an English learner who mostly uses and works with
-              English, but your learning and working method do not exceed a high
-              level. You were confused by countless documents and topics on the
-              internet, so your learning path is nearly vague. Specialized
-              vocabulary, multi-meaning words completely confuse you when
-              speaking and writing English with different specific contexts....
-            </p>
-            <p class="hugo-academic-item-time text-uppercase mb-0">
-              may 30, 2022
-            </p>
-          </div>
-        </div>
-      </div>
+      <div id="hugo-academic" class="hugo-academic px-5 py-3"></div>
     </div>
     <div class="hugo-confession">
       <div class="hugo-confession-img d-flex justify-content-center">
@@ -328,9 +284,9 @@
                 <img src="../imgs/hugoIcon.png" alt="" />
               </div>
               <div class="col-lg-10 d-lg-flex flex-wrap">
-                <h5 class="text-uppercase fw-bold mt-3 mt-lg-0">
+                <div class="text-uppercase fw-bold mt-3 mt-lg-0 hugo-name">
                   hugo english club <br />
-                </h5>
+                </div>
                 <span class="text-uppercase">light up your fire</span>
               </div>
             </div>
@@ -346,7 +302,7 @@
           <div
             class="col-lg-2 col-sm-12 col-md-4 mt-3 mt-lg-0 footer-item px-0 text-lg-start text-center about-us"
           >
-            <h5 class="text-uppercase mb-0 mb-lg-3">About us</h5>
+            <h5 class="text-uppercase mb-0">About us</h5>
             <p>
               <a href="" class="text-decoration-none text-white"
                 >About Hugo English Club</a
@@ -354,14 +310,14 @@
             </p>
             <p>
               <a href="" class="text-decoration-none text-white"
-                >About HUGOVERSARY Project</a
+                >About HUGOVERSARY</a
               >
             </p>
           </div>
           <div
             class="col-lg-3 col-sm-12 col-md-4 mt-3 mt-lg-0 footer-item ps-lg-4 p-md-0 text-lg-start text-center"
           >
-            <h5 class="text-uppercase mb-0 mb-lg-3 footer-contact">contact</h5>
+            <h5 class="text-uppercase mb-0 footer-contact">contact</h5>
             <p>
               <a
                 href="mailto:hugoclub.dut@gmail.com"
@@ -408,7 +364,7 @@
           <div
             class="col-lg-2 col-sm-12 col-md-4 mt-3 mt-lg-0 footer-item footer-language text-lg-start text-center"
           >
-            <h5 class="text-uppercase mb-0 mb-lg-3">Language</h5>
+            <h5 class="text-uppercase mb-0">Language</h5>
             <div class="lang-menu">
               <div class="selected-lang d-flex align-items-center">
                 <img src="../imgs/united-states.png" alt="" class="me-2" />

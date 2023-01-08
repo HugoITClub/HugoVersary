@@ -149,3 +149,11 @@
   background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%) !important;
   color: #fff !important;
 }
+
+#carousel-inner .carousel-item {
+  height: 600px !important;
+}
+
+#carousel-inner .carousel-item img {
+  max-height: 600px;
+}
