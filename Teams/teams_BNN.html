@@ -117,16 +117,18 @@
     <!-- JSZip start -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <!-- JSZip end -->
-    <link rel="stylesheet" href="./aboutUs.css" />
+
+    <link rel="stylesheet" href="./teams-CSS/teams.css" />
   </head>
   <body>
+    <!-- Header start -->
     <div class="header" id="header">
       <nav
         class="navbar navbar-expand-lg justify-content-between fixed-top bg-nav"
       >
         <div class="container">
-          <a href="/index.html" class="navbar-brand">
-            <img src="/imgs/hugoIcon.png" alt="" />
+          <a href="../index.html" class="navbar-brand">
+            <img src="../imgs/hugoIcon.png" alt="" />
           </a>
           <p class="text-white text-uppercase mb-0 icon-text">
             hugo english club <br /><span class="text-white"
@@ -172,7 +174,7 @@
                   <li>
                     <a
                       class="dropdown-item text-white teams-name"
-                      href="/Teams/teams_PR.html"
+                      href="./teams_PR.html"
                       >POWER RANGERS</a
                     >
                   </li>
@@ -182,7 +184,7 @@
                   <li>
                     <a
                       class="dropdown-item text-white teams-name"
-                      href="/Teams/teams_HC.html"
+                      href="./teams_HC.html"
                       >HEROES COMPANY</a
                     >
                   </li>
@@ -192,7 +194,7 @@
                   <li>
                     <a
                       class="dropdown-item text-white teams-name"
-                      href="/Teams/teams_BNN.html"
+                      href="./teams_BNN.html"
                       >BANANA</a
                     >
                   </li>
@@ -202,7 +204,7 @@
                   <li>
                     <a
                       class="dropdown-item text-white teams-name"
-                      href="/Teams/teams_NF.html"
+                      href="./teams_NF.html"
                       >NIFFLER</a
                     >
                   </li>
@@ -237,12 +239,12 @@
               <li class="nav-item nav-element">
                 <a
                   class="nav-link text-white nav-blogs"
-                  href="/Blogs/blogs.html"
+                  href="../Blogs/blogs.html"
                   >BLOGS</a
                 >
               </li>
               <li class="nav-item nav-element">
-                <a class="nav-link text-white" href="/AboutUs/aboutUs.html"
+                <a class="nav-link text-white" href="../AboutUs/aboutUs.html"
                   >ABOUT US</a
                 >
               </li>
@@ -257,78 +259,31 @@
         </div>
       </nav>
     </div>
-    <link rel="stylesheet" href="/header.css" />
+    <link rel="stylesheet" href="../header.css" />
+    <script src="../slider.js" type="text/babel"></script>
     <!-- Header end -->
-    <div id="about-introduction" class="about-introduction">
+
+    <!-- header pic start-->
+    <div id="header-pic-area"></div>
+    <!-- header pic end -->
+
+    <!-- team information start -->
+    <div id="team-information" class="team-information"></div>
+    <div id="activities" class="activities">
       <div class="container">
-        <p class="about-introduction-title">
-          Our club built base on <br />
-          LEARN, DEVELOP <br />
-          and JOY
-        </p>
-        <span class="about-introduction-content row col-7"
-          >Hugo English Club was established in March 2008 by DUT students, with
-          the motto of practicing English in dynamic, fun, and interesting ways.
-          Besides, Hugo members not only come from DUT but also come from
-          different universities and colleges in Da Nang, which can give us a
-          lot of opportunities to make new friends. In addition, Hugo also
-          organizes extra-curricular activities such as events, competitions,
-          collaboration programs with other clubs, and charity
-          activities,…</span
-        >
-      </div>
-      <img src="./aboutImg/about-mainpic.png" alt="" class="img-fluid" />
-    </div>
-    <div class="container">
-      <div class="mt-5 about-human text-center">
-        <span class="about-human-title">GET TO KNOW <br /> </span>
-        <span class="about-human-title-sub mb-5">HUGO’S HUMAN</span>
-        <div class="line mt-3"></div>
-        <div class="about-human-description row justify-content-center">
-          <p class="col-6 mt-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-            lobortis.
-          </p>
-        </div>
-        <div id="staffArea" class="row about-member mt-4"></div>
-      </div>
-      <div class="hugo-in-us">
-        <div class="hugo-in-us-line"></div>
-        <div
-          class="hugo-in-us-title row text-uppercase text-center justify-content-center"
-        >
-          hugo in us
-        </div>
-        <p class="hugo-in-us-sub text-center m-0">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-      </div>
-      <div class="hugo-in-us-content row mt-3">
-        <div id="hugo-in-us-area" class="owl-carousel owl-theme">
-          <div class="item p-3 d-flex flex-column align-items-center">
-            <img src="../Teams/teams-img/HC/recent_ac1.png" alt="" class="" />
-            <p class="mem-name mb-0">Tran Quy The</p>
-            <p class="mem-team text-uppercase">BANANA team</p>
-            <p class="mem-description px-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet
-              habitant arcu felis enim eget ultricies elit at auctor. Ultrices
-              quis condimentum eget eu, ultrices nisl. Ac tempus odio sit at.
-              Netus aliquam aliquet tincidunt mauris gravida. Nulla quam nulla
-              fames id. Nibh posuere mi arcu at lorem. Purus eleifend at massa
-              eget vitae enim feugiat porta enim. Nunc nunc id quam faucibus ut.
-            </p>
-            <div class="read_more d-flex justify-content-center">read more</div>
-          </div>
+        <h1 class="team-information-text-title">Recent Activities</h1>
+        <div id="activitiesArea" class="owl-carousel owl-theme mt-5"></div>
+        <div class="teams-line mt-5 pb-5 text-white text-center">
+          <img src="../imgs/Ellipse 7 new.png" alt="" />
         </div>
       </div>
     </div>
-    <script src="/AboutUs/abouUs.js" type="text/babel"></script>
+    <div id="team-information-pic-area" class="team-information-pic-area"></div>
+    <div class="dark-space"></div>
+
     <!-- Footer start -->
-    <div class="footer text-white" id="footer">
-      <div class="container w-100 mt-5 h-auto p-md-0">
+    <div class="footer text-white footer-teams" id="footer">
+      <div class="container w-100 h-auto p-md-0">
         <div class="row footer-items justify-content-between">
           <div
             class="col-lg-3 col-sm-12 px-3 footer-item-logo-title text-lg-start text-center"
@@ -451,5 +406,6 @@
     <link rel="stylesheet" href="/footer.css" />
     <script src="/footer.js"></script>
     <!-- Footer end -->
+    <script src="./teams-js/teams_BNN.js" type="text/babel"></script>
   </body>
 </html>

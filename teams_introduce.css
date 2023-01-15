@@ -90,7 +90,7 @@ html {
   display: flex;
   align-items: center;
   letter-spacing: 0.01em;
-  background: linear-gradient(180deg, #de1d1d 0%, #ff4869 100%);
+  background: linear-gradient(to bottom, #ff0000, #ff6666);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -122,7 +122,7 @@ html {
   display: flex;
   align-items: center;
   letter-spacing: 0.01em;
-  background: linear-gradient(180deg, #ffb800 0%, #ffd600 100%);
+  background: linear-gradient(180deg, #ffcc00, #ffff66);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -186,12 +186,14 @@ html {
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
+  transition: 0.2s ease;
 }
 
 .teams-introduce-text a:hover {
   background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
   color: #fff;
-  border: none;
+  transition: 0.2s ease;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.31);
 }
 
 /* text-introduce section end */

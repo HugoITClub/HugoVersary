@@ -17,12 +17,15 @@
   border-radius: 50% !important;
   color: #fe9548 !important;
   background: rgba(255, 255, 255, 0.8) !important;
+  transition: 0.2s ease;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.31);
 }
 
 .owl-next:hover,
 .owl-prev:hover {
   background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%) !important;
   color: #fff !important;
+  transition: 0.2s ease;
 }
 
 .owl-next {
@@ -50,7 +53,7 @@
 }
 
 .blogs {
-  padding-top: 85px;
+  padding-top: 120px;
   position: relative;
 }
 
@@ -90,10 +93,12 @@
 }
 
 #blogArea {
+  padding: 0 12px;
 }
 
 .card-blog {
   border: 2px solid rgba(226, 226, 226, 1);
+  transition: 0.2s ease;
 }
 
 .card-blog:hover {
@@ -118,6 +123,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  transition: 0.2s ease;
 }
 
 .card-body .card-text {
@@ -134,7 +140,7 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  height: 54px;
+  max-height: 54px;
 }
 
 .card-body span {
@@ -227,7 +233,7 @@
 }
 
 .blogs .see-more {
-  margin: 30px 0 90px 0;
+  margin: 40px 0 90px 0;
 }
 
 .blogs .see-more a {
@@ -247,9 +253,13 @@
   font-size: 14px;
   line-height: 18px;
   padding: 15px 65px;
+  transition: all 0.2s ease;
 }
 
 .blogs .see-more a:hover {
   background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
   color: #fff;
+  border: 1px solid #fc6373;
+  transition: all 0.2s ease;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.31);
 }

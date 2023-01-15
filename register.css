@@ -1,120 +1,105 @@
 .register {
-    height: 476px;
-    padding: 51px 112px;
-    /* background-color: pink; */
-    background: url(./imgs/register_bg4.png) no-repeat center;
-    background-size: cover;
-    border-radius: 10px;
-    border: 2px solid #FE9548;
-    backdrop-filter: blur(5px);
-    /* new */
-    /* position: relative; */
-    margin-bottom: 100px;
+  height: 476px;
+  padding: 51px 112px;
+  background: url(./imgs/register_bg4.png) no-repeat center;
+  background-size: cover;
+  border-radius: 10px;
+  border: 2px solid #fe9548;
+  backdrop-filter: blur(5px);
+  margin-bottom: 158px;
+  margin-top: 120px;
 }
-
-/* .register img {
-    max-width:100%;
-    max-height:100%;
-
-} */
-
-
-
-/* .register_content {
-    position: absolute;
-    top:auto;
-} */
 
 .register_title {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 49px;
-    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
-    -webkit-background-clip: text;
-    -webkit-color: transparent;
-    background-clip: text;
-    color: transparent;
-    letter-spacing: 1px;
-    font-family: 'Montserrat';
-    text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
+  -webkit-background-clip: text;
+  -webkit-color: transparent;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 1px;
+  font-family: "Montserrat";
+  text-align: center;
 }
 
-
-
 .register_description {
-    text-align: center;
-    font-family: 'Montserrat';
-    font-style: normal;
-    /* font-weight: 700; */
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #898989;
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  /* font-weight: 700; */
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #898989;
 }
 
 .register_description p {
-    margin: 0 ;
+  margin: 0;
 }
 
 .register_description_importance_text {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .register_join_us {
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 70px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 70px;
 }
 
 /* check box-shadow */
 
 .register_join_us a {
-    text-decoration: none;
-    border: 1px solid #FC6373;
-    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
-    -webkit-background-clip: text;
-    -webkit-color: transparent;
-    background-clip: text;
-    color: transparent;
-    padding: 25px 30px;
-    border-radius: 50px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20.2613px;
-    line-height: 26px;
-    letter-spacing: 0.03em;
-    padding: 22.5px auto;
+  text-decoration: none;
+  border: 1px solid #fc6373;
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
+  -webkit-background-clip: text;
+  -webkit-color: transparent;
+  background-clip: text;
+  color: transparent;
+  padding: 25px 30px;
+  border-radius: 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20.2613px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  padding: 22.5px auto;
+  transition: all 0.1s ease;
 }
 
 .register_join_us a:hover {
-    background: linear-gradient(92deg, #FC6373 1.05%, #FE9548 98.6%);
-    color: #fff;
-    border: none;
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
+  color: #fff;
+  transition: all 0.2s ease;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.31);
 }
 
 .register-wrap {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .decor-5 {
-    position: absolute;
-    top: 60px;
-    left: 40px;
-    z-index: -1;
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  z-index: -1;
 }
 
 .decor-6 {
-    position: absolute;
-    right: 50px;
-    bottom: -70px;
-    z-index: -1;
+  position: absolute;
+  right: 50px;
+  bottom: -70px;
+  z-index: -1;
 }
 
 .decor-7 {
-    position: absolute;
-    right: 10px;
-    bottom: 100px;
+  position: absolute;
+  right: 10px;
+  bottom: 100px;
 }

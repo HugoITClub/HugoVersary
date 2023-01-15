@@ -1,3 +1,69 @@
 .post-content {
   margin-top: 71px;
 }
+.recent-posts-wrap {
+  margin-top: 98px;
+  max-height: 594px;
+  overflow: hidden;
+}
+.recent-posts-title {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: #000000;
+}
+
+.recent-posts-item {
+  padding: 8px !important;
+  margin-bottom: 4px !important;
+  height: 108px;
+}
+
+.recent-posts-item .post_image_part {
+  height: 92px !important;
+  overflow: hidden;
+}
+
+.recent-posts-item .post_image_part img {
+  height: 92px !important;
+  width: 100%;
+}
+
+.recent-posts-item .post_title {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12.49px;
+  line-height: 11px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 44px;
+}
+
+.recent-posts .post_description {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 11px;
+  letter-spacing: 0.03em;
+  color: #949ba4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  max-height: 44px;
+  margin-top: 4px;
+}

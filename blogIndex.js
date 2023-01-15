@@ -22,7 +22,11 @@ async function loadBlogs() {
                 <img
                   src={imageUrl}
                   className="card-img-top rounded"
-                  style={{ width: "250px", height: "176px" }}
+                  style={{
+                    width: "250px",
+                    height: "176px",
+                    objectFit: "cover",
+                  }}
                 />
               </div>
               <div className="card-body">

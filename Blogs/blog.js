@@ -21,7 +21,7 @@ async function loadBlogs() {
               <img
                 src={imageUrl}
                 className="card-img-top rounded"
-                style={{ width: "250px", height: "176px" }}
+                style={{ width: "250px", height: "176px", objectFit: "cover" }}
               />
             </div>
             <div className="card-body">
@@ -54,17 +54,22 @@ async function loadAcademicPost() {
     const academicArea = document.querySelector("#hugo-academic");
     ReactDOM.render(
       response.values.map(([id, image, author, title, description, date]) => (
-        <div key={id} class="hugo-academic-item row justify-content-between">
-          <div class="col-lg-5 hugo-academic-item-pic align-item-center">
-            <img src={image} alt="" class="img-fluid rounded" />
+        <div
+          key={id}
+          className="hugo-academic-item row justify-content-between"
+        >
+          <div className="col-lg-5 hugo-academic-item-pic align-item-center">
+            <img src={image} alt="" className="img-fluid rounded" />
           </div>
-          <div class="col-lg-7 p-3 position-relative">
-            <p class="hugo-academic-item-author text-uppercase mb-0">
+          <div className="col-lg-7 p-3 position-relative">
+            <p className="hugo-academic-item-author text-uppercase mb-0">
               by {author}
             </p>
-            <h4 class="hugo-academic-item-title">{title}</h4>
-            <p class="hugo-academic-item-content mb-0">{description}</p>
-            <p class="hugo-academic-item-time text-uppercase mb-0">{date}</p>
+            <h4 className="hugo-academic-item-title">{title}</h4>
+            <p className="hugo-academic-item-content mb-0">{description}</p>
+            <p className="hugo-academic-item-time text-uppercase mb-0">
+              {date}
+            </p>
           </div>
         </div>
       )),
@@ -82,10 +87,13 @@ async function loadConfession() {
     const confessionArea = document.querySelector("#confessionArea");
     ReactDOM.render(
       response.values.map(([id, content, number]) => (
-        <div key={id} class="item">
+        <div key={id} className="item">
           <img src="./blog-img/confession-symbol.png" alt="" />
           <p className="confession-content">{content}</p>
-          <p className="cfs-number">#Cfs {number}</p>
+          <div className="row cfs-sign flex-nowrap mt-3 justify-content-between">
+            <p className="cfs-number col-5">#Cfs {number}</p>
+            <i className="col-1 fa-regular fa-circle-down"></i>
+          </div>
         </div>
       )),
       confessionArea,
@@ -147,6 +155,15 @@ const setupOwlCarouselConfession = () => {
   });
 };
 
+// Handle Scroll Confession
+
+async function handleScroll() {
+  const confessionItem = document.querySelector(".confession-content");
+  const scrollTop = confessionItem.scrollTop;
+
+  return console.log(scrollTop);
+}
+
 async function run() {
   await loadGapi();
   await loadBlogs();
@@ -154,6 +171,7 @@ async function run() {
   await loadConfession();
   setupOwlCarouselBlog();
   setupOwlCarouselConfession();
+  await handleScroll();
 }
 
 run();

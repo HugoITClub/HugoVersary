@@ -12,23 +12,24 @@
 .club-introduction .vector-2 {
   position: absolute;
   right: 102px;
-  top: 80px;
+  top: 66px;
 }
 
 .first-paragraph {
   width: 520px;
   height: 64px;
-  /* font-family: 'Montserrat'; */
+  font-family: "Lato";
   font-style: normal;
   font-weight: 600;
   font-size: 46px;
   line-height: 56px;
+  display: flex;
+  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   /* color: #FC6373; */
   color: white;
-  -webkit-text-stroke: 0.5px #fc6373;
-  /* width and color */
+  -webkit-text-stroke: 0.5px #f31329;
 }
 
 .second-paragraph {
@@ -44,8 +45,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* border: 2px solid #FFFFFF; */
-  text-shadow: 0.818314px 1.63663px 4.90988px rgba(0, 0, 0, 0.08);
   text-transform: uppercase;
 }
 
@@ -84,11 +83,13 @@
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
+  transition: all 0.2s ease;
   line-height: 18px;
 }
 
 .club_read_more a:hover {
   background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%);
   color: #fff;
-  border: none;
+  transition: all 0.2s ease;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.31);
 }

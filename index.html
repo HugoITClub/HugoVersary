@@ -5,6 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=di, initial-scale=1.0" />
 
+    <!-- Favicon start -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/imgs/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/imgs/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/imgs/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/imgs/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/imgs/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/imgs/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="/imgs/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Favicon end -->
     <!-- Font family -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -94,8 +126,8 @@
         class="navbar navbar-expand-lg justify-content-between fixed-top bg-nav"
       >
         <div class="container">
-          <a href="./index.html" class="navbar-brand">
-            <img src="./imgs/hugoIcon.png" alt="" />
+          <a href="/index.html" class="navbar-brand">
+            <img src="/imgs/hugoIcon.png" alt="" />
           </a>
           <p class="text-white text-uppercase mb-0 icon-text">
             hugo english club <br /><span class="text-white"
@@ -139,7 +171,9 @@
                 </div>
                 <ul class="dropdown-menu teams-elements">
                   <li>
-                    <a class="dropdown-item text-white teams-name" href="#"
+                    <a
+                      class="dropdown-item text-white teams-name"
+                      href="/Teams/teams_PR.html"
                       >POWER RANGERS</a
                     >
                   </li>
@@ -147,7 +181,9 @@
                     <hr class="dropdown-divider bg-white m-0" />
                   </li>
                   <li>
-                    <a class="dropdown-item text-white teams-name" href="#"
+                    <a
+                      class="dropdown-item text-white teams-name"
+                      href="/Teams/teams_HC.html"
                       >HEROES COMPANY</a
                     >
                   </li>
@@ -155,7 +191,9 @@
                     <hr class="dropdown-divider bg-white m-0" />
                   </li>
                   <li>
-                    <a class="dropdown-item text-white teams-name" href="#"
+                    <a
+                      class="dropdown-item text-white teams-name"
+                      href="/Teams/teams_BNN.html"
                       >BANANA</a
                     >
                   </li>
@@ -163,7 +201,9 @@
                     <hr class="dropdown-divider bg-white m-0" />
                   </li>
                   <li>
-                    <a class="dropdown-item text-white teams-name" href="#"
+                    <a
+                      class="dropdown-item text-white teams-name"
+                      href="/Teams/teams_NF.html"
                       >NIFFLER</a
                     >
                   </li>
@@ -181,7 +221,9 @@
                 </div>
                 <ul class="dropdown-menu mt-0 activities-elements">
                   <li>
-                    <a class="dropdown-item text-white activities-name" href="#"
+                    <a
+                      class="dropdown-item text-white activities-name"
+                      href="/meeting/meeting.html"
                       >MEETINGS</a
                     >
                   </li>
@@ -189,7 +231,9 @@
                     <hr class="dropdown-divider bg-white m-0" />
                   </li>
                   <li>
-                    <a class="dropdown-item text-white activities-name" href="#"
+                    <a
+                      class="dropdown-item text-white activities-name"
+                      href="/meeting/event.html"
                       >EVENTS</a
                     >
                   </li>
@@ -198,25 +242,22 @@
               <li class="nav-item nav-element">
                 <a
                   class="nav-link text-white nav-blogs"
-                  href="./Blogs/blogs.html"
+                  href="/Blogs/blogs.html"
                   >BLOGS</a
                 >
               </li>
               <li class="nav-item nav-element">
-                <a class="nav-link text-white" href="./AboutUs/aboutUs.html"
+                <a class="nav-link text-white" href="/AboutUs/aboutUs.html"
                   >ABOUT US</a
                 >
               </li>
             </ul>
-            <form class="search" role="search">
-              <input
-                class=""
-                type=""
-                placeholder="What do you want to search?"
-                aria-label=""
-              />
-              <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-            </form>
+            <a
+              target="blank"
+              href="https://www.google.com/"
+              class="text-uppercase text-decoration-none join-us-button"
+              >join us</a
+            >
           </div>
         </div>
       </nav>
@@ -225,17 +266,7 @@
         class="carousel slide main-slider"
         data-bs-ride="carousel"
       >
-        <div id="carousel-inner" class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="5000">
-            <img src="./imgs/slider_1.png" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="./imgs/slider_1.png" class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="./imgs/slider_1.png" class="d-block w-100" alt="..." />
-          </div>
-        </div>
+        <div id="carousel-inner" class="carousel-inner slideHomePage"></div>
         <button
           class="carousel-control-prev header-btn-prev"
           type="button"
@@ -256,8 +287,8 @@
         </button>
       </div>
     </div>
-    <link rel="stylesheet" href="./header.css" />
-    <script src="./slider.js" type="text/babel"></script>
+    <link rel="stylesheet" href="/header.css" />
+    <script src="/slider.js" type="text/babel"></script>
     <!-- Header end -->
 
     <!-- Club-introduction start-->
@@ -279,7 +310,9 @@
               enhance personal skills, and experience new activities.
             </div>
             <div class="club_read_more mt-4">
-              <a href="#">READ MORE</a>
+              <a href="/AboutUs/aboutUs.html" class="text-uppercase"
+                >see more</a
+              >
             </div>
           </div>
           <div class="right-content col-lg-6">
@@ -392,7 +425,9 @@
                   sympathize and share together to create a sense of solidarity
                   so that everyone is always happy and closer to each other.”
                 </p>
-                <a class="mt-5" href="">READ MORE</a>
+                <a class="mt-5 text-uppercase" href="/Teams/teams_PR.html"
+                  >see more</a
+                >
               </div>
             </div>
             <div class="p-4 team-all" style="--index: 2" data-index="2">
@@ -409,7 +444,9 @@
                   cozier , Heroes Company is just what people truly want to
                   fulfill their days."
                 </p>
-                <a class="mt-5" href="">READ MORE</a>
+                <a class="mt-5 text-uppercase" href="/Teams/teams_HC.html"
+                  >see more</a
+                >
               </div>
             </div>
             <div class="p-4 team-all" style="--index: 3" data-index="3">
@@ -426,7 +463,9 @@
                   humor, they always make you "lmao" and forget all your
                   tiredness.”
                 </p>
-                <a class="mt-5" href="">READ MORE</a>
+                <a class="mt-5 text-uppercase" href="/Teams/teams_BNN.html"
+                  >see more</a
+                >
               </div>
             </div>
             <div class="p-4 team-all" style="--index: 4" data-index="4">
@@ -442,7 +481,9 @@
                   respects each member's unique personality and thoughts, which
                   makes everyone feel comfortable being themselves.”
                 </p>
-                <a class="mt-5" href="">READ MORE</a>
+                <a class="mt-5 text-uppercase" href="/Teams/teams_NF.html"
+                  >see more</a
+                >
               </div>
             </div>
           </div>
@@ -480,9 +521,6 @@
                 <p class="item-activities-text-time">MAY 30, 2022</p>
               </div>
             </div>
-          </div>
-          <div class="see-more d-flex justify-content-center">
-            <a class="" href="">SEE MORE</a>
           </div>
         </div>
       </div>
@@ -522,9 +560,6 @@
             </div>
           </div>
         </div>
-        <div class="see-more d-flex justify-content-center">
-          <a class="" href="">SEE MORE</a>
-        </div>
       </div>
     </div>
     <link rel="stylesheet" href="./blogs.css" />
@@ -537,7 +572,7 @@
       <img src="./imgs/decor-bg/decor-6.png" alt="" class="decor-6" />
       <img src="./imgs/decor-bg/decor-7.png" alt="" class="decor-7" />
       <div class="container">
-        <div class="register row mt-5">
+        <div class="register row">
           <div class="register_title">BECOME AN OFFICIAL MEMBER OF</div>
           <div class="register_title">HUGO ENGLISH CLUB</div>
 
@@ -573,7 +608,7 @@
           >
             <div class="row mb-3">
               <div class="col-lg-2">
-                <img src="../imgs/hugoIcon.png" alt="" />
+                <img src="/imgs/hugoIcon.png" alt="" />
               </div>
               <div class="col-lg-10 d-lg-flex flex-wrap">
                 <div class="text-uppercase fw-bold mt-3 mt-lg-0 hugo-name">
@@ -587,7 +622,8 @@
                 This website is a product of Hugo IT club and part of the
                 HUGOVERSARY project to celebrate the 15th birthday of Hugo
                 English Club. This website is to store, update and promote the
-                activities and events of Hugo Club up to the present time.
+                activities and events of Hugo English Club up to the present
+                time.
               </p>
             </div>
           </div>
@@ -596,12 +632,16 @@
           >
             <h5 class="text-uppercase mb-0">About us</h5>
             <p>
-              <a href="" class="text-decoration-none text-white"
+              <a
+                href="/AboutUs/aboutUs.html"
+                class="text-decoration-none text-white"
                 >About Hugo English Club</a
               >
             </p>
             <p>
-              <a href="" class="text-decoration-none text-white"
+              <a
+                href="/AboutUs/aboutHugoversary.html"
+                class="text-decoration-none text-white"
                 >About HUGOVERSARY</a
               >
             </p>
@@ -659,13 +699,13 @@
             <h5 class="text-uppercase mb-0">Language</h5>
             <div class="lang-menu">
               <div class="selected-lang d-flex align-items-center">
-                <img src="../imgs/united-states.png" alt="" class="me-2" />
+                <img src="/imgs/united-states.png" alt="" class="me-2" />
                 <p class="mb-0">English</p>
                 <i class="fa-sharp fa-solid fa-caret-down"></i>
               </div>
               <ul class="lang-selection">
                 <li value="en" class="d-flex align-items-center lang-option">
-                  <img src="../imgs/united-states.png" alt="" class="me-2" />
+                  <img src="/imgs/united-states.png" alt="" class="me-2" />
                   <p class="mb-0">English</p>
                 </li>
                 <!-- <li value="vi" class="d-flex align-items-center lang-option">
@@ -681,8 +721,8 @@
         </div>
       </div>
     </div>
-    <link rel="stylesheet" href="../footer.css" />
-    <script src="./footer.js"></script>
+    <link rel="stylesheet" href="/footer.css" />
+    <script src="/footer.js"></script>
     <!-- Footer end -->
   </body>
 </html>

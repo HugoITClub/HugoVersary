@@ -18,7 +18,11 @@ async function loadActivities() {
           contentFileId,
         ]) => {
           return (
-            <a key={id} href={`../post/post.html?fileId=${contentFileId}`}>
+            <a
+              key={id}
+              target="blank"
+              href={`../post/post.html?fileId=${contentFileId}`}
+            >
               <div className="item" style={{ width: "400px", height: "242px" }}>
                 <img className="img-fluid" src={imageUrl} alt="" />
                 <div className="item-activities-text text-white mx-4">
@@ -28,7 +32,7 @@ async function loadActivities() {
                     >
                       {label}
                     </h6>
-                    <h5>TOPIC: {name}</h5>
+                    <h5>{name}</h5>
                   </div>
                   <p className="item-activities-text-sub">{description}</p>
                   <p className="item-activities-text-time">{date}</p>

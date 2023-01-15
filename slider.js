@@ -3,16 +3,21 @@ async function loadSlider() {
   const response = await getSlider(0, 1000);
 
   return new Promise((resolve) => {
-    const sliderArea = document.querySelector("#carousel-inner");
+    const sliderArea = document.querySelector(".slideHomePage");
     ReactDOM.render(
-      response.values.map(([id, image, imageUrl, status]) => {
+      response.values.map(([id, image, imageUrl], index) => {
         return (
           <div
             key={id}
-            className={`carousel-item ${status}`}
+            className={`carousel-item ${index == 0 ? "active" : ""}`}
             data-bs-interval="5000"
           >
-            <img src={imageUrl} className="d-block w-100" alt="..." />
+            <img
+              src={imageUrl}
+              className="d-block w-100 "
+              style={{ objectFit: "cover" }}
+              alt="..."
+            />
           </div>
         );
       }),

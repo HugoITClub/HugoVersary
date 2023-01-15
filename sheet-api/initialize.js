@@ -127,7 +127,7 @@ async function getSlider(skip = 0, take = 4) {
   // Get data from spreadsheet
   const response = await gapi.client.sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
-    range: `SliderHomePage!A${skip + 2}:D${skip + take + 2 - 1}`,
+    range: `SliderHomePage!A${skip + 2}:C${skip + take + 2 - 1}`,
   });
 
   // Process data
@@ -168,11 +168,11 @@ async function getAcademicPost(skip = 0, take = 4) {
   return result;
 }
 
-async function getTeamMeetingPost(skip = 0, take = 4) {
+async function getMeetingPost(skip = 0, take = 4) {
   // Get data from spreadsheet
   const response = await gapi.client.sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
-    range: `TeamMeeting!A${skip + 2}:H${skip + take + 2 - 1}`,
+    range: `Meeting!A${skip + 2}:H${skip + take + 2 - 1}`,
   });
 
   // Process data
@@ -218,6 +218,143 @@ async function getConfession(skip = 0, take = 4) {
   const response = await gapi.client.sheets.spreadsheets.values.get({
     spreadsheetId: SPREADSHEET_ID,
     range: `Confession!A${skip + 2}:C${skip + take + 2 - 1}`,
+  });
+
+  // Process data
+  const { result } = response;
+  if (!result || !result.values || result.values.length == 0) {
+    return [];
+  }
+  return result;
+}
+
+// 4 teams area
+
+async function getPRActivities(skip = 0, take = 4) {
+  // Get data from spreadsheet
+  const response = await gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `PowerRangers!Y${skip + 2}:AE${skip + take + 2 - 1}`,
+  });
+
+  // Process data
+  const { result } = response;
+  if (!result || !result.values || result.values.length == 0) {
+    return [];
+  }
+  return result;
+}
+
+async function getPRInformation(skip = 0, take = 4) {
+  // Get data from spreadsheet
+  const response = await gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `PowerRangers!Q${skip + 2}:T${skip + take + 2 - 1}`,
+  });
+
+  // Process data
+  const { result } = response;
+  if (!result || !result.values || result.values.length == 0) {
+    return [];
+  }
+  return result;
+}
+
+async function getPRImages(skip = 0, take = 4) {
+  // Get data from spreadsheet
+  const response = await gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `PowerRangers!V${skip + 2}:W${skip + take + 2 - 1}`,
+  });
+
+  // Process data
+  const { result } = response;
+  if (!result || !result.values || result.values.length == 0) {
+    return [];
+  }
+  return result;
+}
+
+async function getHCActivities(skip = 0, take = 4) {
+  // Get data from spreadsheet
+  const response = await gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `HeroesCompany!Y${skip + 2}:AE${skip + take + 2 - 1}`,
+  });
+
+  // Process data
+  const { result } = response;
+  if (!result || !result.values || result.values.length == 0) {
+    return [];
+  }
+  return result;
+}
+
+async function getHCInformation(skip = 0, take = 4) {
+  // Get data from spreadsheet
+  const response = await gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `HeroesCompany!Q${skip + 2}:X${skip + take + 2 - 1}`,
+  });
+
+  // Process data
+  const { result } = response;
+  if (!result || !result.values || result.values.length == 0) {
+    return [];
+  }
+  return result;
+}
+
+async function getBNNActivities(skip = 0, take = 4) {
+  // Get data from spreadsheet
+  const response = await gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `Banana!Y${skip + 2}:AE${skip + take + 2 - 1}`,
+  });
+
+  // Process data
+  const { result } = response;
+  if (!result || !result.values || result.values.length == 0) {
+    return [];
+  }
+  return result;
+}
+
+async function getBNNInformation(skip = 0, take = 4) {
+  // Get data from spreadsheet
+  const response = await gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `Banana!Q${skip + 2}:X${skip + take + 2 - 1}`,
+  });
+
+  // Process data
+  const { result } = response;
+  if (!result || !result.values || result.values.length == 0) {
+    return [];
+  }
+  return result;
+}
+
+async function getNFActivities(skip = 0, take = 4) {
+  // Get data from spreadsheet
+  const response = await gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `Niffler!Y${skip + 2}:AE${skip + take + 2 - 1}`,
+  });
+
+  // Process data
+  const { result } = response;
+  if (!result || !result.values || result.values.length == 0) {
+    return [];
+  }
+  return result;
+}
+
+async function getNFInformation(skip = 0, take = 4) {
+  // Get data from spreadsheet
+  const response = await gapi.client.sheets.spreadsheets.values.get({
+    spreadsheetId: SPREADSHEET_ID,
+    range: `Niffler!Q${skip + 2}:X${skip + take + 2 - 1}`,
   });
 
   // Process data

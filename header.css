@@ -143,17 +143,38 @@
   color: #fe9548 !important;
   background: rgba(255, 255, 255, 0.4) !important;
   opacity: 1;
+  transition: 0.2s ease;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.31);
 }
 #header .carousel-control-next:hover,
 #header .carousel-control-prev:hover {
   background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%) !important;
   color: #fff !important;
+  transition: 0.2s ease;
 }
 
 #carousel-inner .carousel-item {
-  height: 600px !important;
+  height: 590px !important;
 }
 
 #carousel-inner .carousel-item img {
-  max-height: 600px;
+  max-height: 590px;
+}
+
+.join-us-button {
+  background: linear-gradient(92deg, #fc6373 1.05%, #fe9548 98.6%) !important;
+  color: #fff;
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+}
+
+.join-us-button:hover {
+  background: linear-gradient(92deg, #fff 1.05%, #fff 98.6%) !important;
+  color: #fc6373 !important;
+  transition: 0.2s ease;
 }
